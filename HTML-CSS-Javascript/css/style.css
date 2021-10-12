@@ -1,0 +1,179 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #2F323A;
+    color: white;
+}
+
+.header{
+    height: 210px;
+}
+
+.logo a img {
+    width: 455px;
+    height: 206px;
+}
+
+.container-grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.posicionamento-header{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrinho {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.login{ 
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 100;
+}
+
+.menu {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    height: 300px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Saira', sans-serif;
+
+}
+
+.itens-banner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-banner-esquedo{
+    width: 350px;
+    text-align: center;
+}
+
+.texto-banner-direito{
+    width: 350px;
+    text-align: center;
+}
+
+main {
+    font-family: 'Saira', sans-serif;
+}
+
+.cards {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.cards img {
+    width: 30px;
+    height: 30px;
+}
+
+.cards img .caminhao {
+    width: 40.37px;
+    height: 25.27px;
+}
+
+.card {
+    padding: 5px 10px;
+    background-color: #D72638;
+    border: 2px solid #D72638;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.produtos-promocao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos-mais-vendidos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-secao {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    padding: 10px;
+    margin: 30px;
+    background-color: #D72638;
+    border: 2px solid #D72638;
+    border-radius: 15px;
+}
+
+.produto{
+    text-align: center;
+}
+
+.nome-produto {
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+}
+
+.produtos-promocao .produto img {
+    width: 230px;
+    height: 129px;
+}
+
+.produtos-mais-vendidos .produto img {
+    width: 230px;
+    height: 129px;
+}
+
+
+.preco-produto {
+    font-family: 'Rightheous', sans-serif;
+}
+
+.footer-superior {
+    background-color: #154B79;
+}
+
+.titulo-bloco-footer {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.blocofooter a {
+    color: white;
+    text-decoration: none;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.blocofooter p {
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.footer-inferior{
+    font-family: 'Saira Semi Condensed', sans-serif;
+}

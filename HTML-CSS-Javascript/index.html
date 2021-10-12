@@ -4,128 +4,168 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image" href="">        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">        
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Extra+Condensed&family=Saira+Semi+Condensed:wght@300&family=Saira:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;300&family=Saira+Extra+Condensed:wght@100;200&family=Saira+Semi+Condensed:wght@300&family=Saira:wght@100;200;300&display=swap" rel="stylesheet">
         <title> Game Mania </title>
     </head>
     <body>
         <div class="header">
             <header>
-                <img src="" alt="">
-                <div>
-                    <input type="text" placeholder="Digite sua busca aqui">
-                    <div class="carrinho">
-                        <img src="" alt=""> <h3>| 0 </h3>
+                <div class="container-grid posicionamento-header">
+                    <div class="logo">
+                        <a href="#"><img src="img/GameManiaNeon.png" alt="Logotipo da loja"></a>
+                    </div>                
+                    <div class="header-direito">
+                        <div class="posicionamento-header"> 
+                            <input type="text" placeholder="Digite sua busca aqui">
+                            <div class="carrinho">
+                                <img src="img/carrinho-carrinho.png" alt=""> <h3>| 0 </h3>
+                            </div>
+                            <div class= "login">
+                                <h3><img src="img/user.png" alt="">Login | Cadastro</h3> 
+                            </div>
+                        </div>
+                        <nav class= menu>
+                            <a href="consoles.html"> Consoles </a>
+                            <a href="jogos.html"> Jogos </a>
+                            <a href="computadores.html"> Computadores </a>
+                            <a href="controles.html"> Controles </a>
+                            <a href="#"> Acessórios </a>
+                            <a href="#"> Raridades </a>
+                            <a href="#"> Promoções </a>
+                        </nav>
                     </div>
-                    <h3><img src="" alt="">Login | Cadastro</h3>
-                    <nav>
-                        <a href=""> Consoles </a>
-                        <a href=""> Jogos </a>
-                        <a href=""> Computadores </a>
-                        <a href=""> Controles </a>
-                        <a href="">Acessórios </a>
-                        <a href=""> Raridades </a>
-                        <a href="">Promoções </a>
-                    </nav>
                 </div>
             </header>
         </div>
-        <div>
-            <main>
-                <img src="" alt="">
-                <h1>Assine o Game Mania Club e tenha acesso á descontos exclusivos! </h1>
-                <h1> Compre á vista e ganhe 10% de desconto em todo o site.</h1>
+        <div class="banner">
+            <main class="container-grid itens-banner">
+                <div class="texto-banner-esquedo">
+                    <h1>Assine o Game Mania Club e tenha acesso á descontos exclusivos! </h1>
+                </div>
+                <div class="texto-banner-direito">
+                    <h1> Compre á vista e ganhe 10% de desconto em todo o site.</h1>
+                </div>               
+                
             </main>
         </div>
-        <div>
+        <div class="container-grid">
             <section class="cards">
-                <h2><img src="" alt=""> Compra 100% segura</h2>
-                <h2><img src="" alt=""> Aceitamos todos os cartões </h2>
-                <h2><img src="" alt=""> Frete Grátis Norte-Nordeste</h2>
+                <div class="card">
+                    <h2><img src="img/cadeado-trancado.png" alt=""> Compra 100% segura</h2>
+                </div>
+                <div class="card"><h2>
+                    <img src="img/pagamento-com-cartao-de-credito.png" alt=""> Aceitamos todos os cartões </h2>
+                </div>
+                <div class="card">
+                    <h2><img src="img/caminhao-de-entrega.png" alt="" class="caminhao"> Frete Grátis Norte-Nordeste</h2>
+                </div>
             </section>
         </div>
-        <div>
+        <div class = container-grid>
             <section class="promocao">
-                <h3 class="titulopromocao"> Produtos em promoção </h3>
-                    <div class="produtos">
-                        <img src="" alt="">
-                        <h4 class="nome-produto"> Console Retrô Vermelho </h4>
-                        <h4 class="preco-produto">de: R$1250,00por apenas: 1000,00</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto"> Headphone Gaming Pro </h4>
-                        <h4 class="preco-produto">de: R$250,00por apenas: 200,00</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto"> Óculos VR Ultimate 7C </h4>
-                        <h4 class="preco-produto">de: R$799,00por apenas: 699,00</h4>
+                <h3 class="titulo-secao"> Produtos em promoção </h3>
+                    <div class="produtos-promocao">
+                        <div class="produto">
+                            <img src="img/console.jpeg" alt="Foto de console de video game vermelho e retrô">
+                            <h4 class="nome-produto"> Console Retrô Vermelho </h4>
+                            <h4 class="preco-produto">de: R$1250,00 por apenas: 1000,00</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/Headphone.jpg" alt="Foto de um Headphone preto">
+                            <h4 class="nome-produto"> Headphone Gaming Pro </h4>
+                            <h4 class="preco-produto">de: R$250,00 por apenas: 200,00</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/vr3.jpeg" alt="Foto de um óculos VR em uso por um homem">
+                            <h4 class="nome-produto"> Óculos VR Ultimate 7C </h4>
+                            <h4 class="preco-produto">de: R$799,00 por apenas: 699,00</h4>
+                        </div>
                     </div>               
             </section>
         </div>
         <div>
             <section class="maisvendidos">
-                <h3 class="titulomaisvendidos"> Mais vendidos</h3>
-                    <div class="produtos">
-                        <img src="" alt="">
-                        <h4 class="nome-produto">Miniatura Mario Bross</h4>
-                        <h4 class="preco-produto"> R$ 59,98 em até 10X sem juros</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto">Nintendo Switch</h4>
-                        <h4 class="preco-produto"> R$ 2199,97 em até 12X sem juros</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto">Tablet Infomais Tech </h4>
-                        <h4 class="preco-produto">  R$ 1699,99 em até 12X sem juros</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto">Teclado Gamer Ligth</h4>
-                        <h4 class="preco-produto"> R$ 75,99 em até 10X sem juros</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto">Mouse Gamer Rainbow</h4>
-                        <h4 class="preco-produto"> R$79,99 em até 10X sem juros</h4>
-                        <img src="" alt="">
-                        <h4 class="nome-produto">Console Playstation 4</h4>
-                        <h4 class="preco-produto"> R$ 1799,98 em até 12X sem juros</h4>
+                <h3 class="titulo-secao"> Mais vendidos</h3>
+                    <div class="produtos-mais-vendidos">
+                        <div class="produto">
+                            <img src="img/mario.jpeg" alt="Foto de uma boneco do Mario Bross">
+                            <h4 class="nome-produto">Miniatura Mario Bross</h4>
+                            <h4 class="preco-produto"> R$ 59,98 em até 10X sem juros</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/nintendo.jpeg" alt="Foto do console Nintendo Switch">
+                            <h4 class="nome-produto">Nintendo Switch</h4>
+                            <h4 class="preco-produto"> R$ 2199,97 em até 12X sem juros</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/tablet.jpeg" alt="Foto de um tablet">
+                            <h4 class="nome-produto">Tablet Infomais Tech </h4>
+                            <h4 class="preco-produto">  R$ 1699,99 em até 12X sem juros</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/teclado-gamer.jpg" alt="Foto de um teclado preto de computador">
+                            <h4 class="nome-produto">Teclado Gamer Ligth</h4>
+                            <h4 class="preco-produto"> R$ 75,99 em até 10X sem juros</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/Mouse.jpeg" alt="Foto de um mouse preto de computador retroiluminado com luzes coloridas">
+                            <h4 class="nome-produto">Mouse Gamer Rainbow</h4>
+                            <h4 class="preco-produto"> R$79,99 em até 10X sem juros</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/PS4.jpeg" alt="Foto do console do Playstation 4">
+                            <h4 class="nome-produto">Console Playstation 4</h4>
+                            <h4 class="preco-produto"> R$ 1799,98 em até 12X sem juros</h4>
+                        </div>
                     </div>               
             </section>
         </div>
         <div>
-            <footer>
-                <div>
-                    <img src="" alt="" class="logofooter">
-                    <label for ="email">Assine nossa newsletter </label>
-                    <input id="email" type="text" placeholder="seuemail.@email.com">
-                </div>
-                <div>
-                    <p>Institucional</p>
-                    <a href="">Quem somos</a>
-                    <a href=""> Missão e Valores</a>
-                    <a href=""> Politica de privacidade</a>
-                    <a href=""> Politica de trocas e devoluções</a>
-                    <a href="">Trabalhe conosco</a>
-                </div>
-                <div>
-                    <p>Mais informações</p>
-                    <a href="">Game Mania Club</a>
-                    <a href="">Cartão Game Mania</a>
-                    <a href="">Prazos e locais de entrega</a>
-                    <a href="">Horários de funcionamento</a>
-                    <a href="">Termos e condições de uso</a>
-                </div>
-                <div class="footersuperior">
-                    <p> Fale Conosco </p>
-                    <a href="">gamemania@emai.com</a>
-                    <a href="">(71) 3333 - 0000</a>
-                    <a href="">(71) 998899 - 9959</a>
-                    <p>Rua  Setembro, nº 16
-                        CEP: 40.444.444
-                        SALVADOR</p>
-                </div>
-                <div class="footerinferior">
+            <footer class= "footer">
+                <div class="footer-superior">
+                    <div class="blocofooter">
+                        <img src="img/GameManiaFooter.png" alt="Logotipo da loja" class="logofooter">
+                        <label for ="email" class="titulo-bloco-footer">Assine nossa newsletter </label>
+                        <input id="email" type="text" placeholder="seuemail.@email.com">
+                    </div>
+                    <div class="blocofooter">
+                        <p class="titulo-bloco-footer">Institucional</p>
+                        <a href="">Quem somos</a>
+                        <a href=""> Missão e Valores</a>
+                        <a href=""> Politica de privacidade</a>
+                        <a href=""> Politica de trocas e devoluções</a>
+                        <a href="">Trabalhe conosco</a>
+                    </div>
+                    <div class="blocofooter">
+                        <p class="titulo-bloco-footer">Mais informações</p>
+                        <a href="">Game Mania Club</a>
+                        <a href="">Cartão Game Mania</a>
+                        <a href="">Prazos e locais de entrega</a>
+                        <a href="">Horários de funcionamento</a>
+                        <a href="">Termos e condições de uso</a>
+                    </div>
+                    <div class="blocofooter">
+                        <p class="titulo-bloco-footer"> Fale Conosco </p>
+                        <img src="img/o-email.png" alt=""><a href="">gamemania@emai.com</a>
+                        <img src="img/telefone-velho.png" alt=""><a href="">(71) 3333 - 0000</a>
+                        <img src="img/whatsapp.png" alt=""><a href="">(71) 998899 - 9959</a>
+                        <img src="img/fixar-mapa.png" alt=""><p>Rua  Setembro, nº 16
+                            CEP: 40.444.444
+                            SALVADOR</p>
+                    </div>
+                </div>                
+                <div class="footer-inferior">
                     <p>Copyrigth © Game Mania | All rights reserved</p>
                     <p>Conecte-se com a gente:</p>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="img/WhiteFacebook.png" alt="Icone Facebook"></a>
+                    <a href=""><img src="img/WhiteYoutube.png" alt="Icone Youtube"></a>
+                    <a href=""><img src="img/WhiteInstagram.png" alt="Icone Instagram"></a>
                 </div>
             </footer>
         </div>
