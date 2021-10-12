@@ -13,3 +13,5 @@ _Repositório criado para armazenar códigos e arquivos relacionados à parte Fr
   - [x] [Mobile prototype (_Protótipo para Smartphones_);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/UI-UX-And-Prototyping(SA1)/Prototypes/MobilePrototype.png)
   - [x] [Final presentation of prototypes (_Apresentação final dos protótipos_).](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/UI-UX-And-Prototyping(SA1)/Prototypes/Joelma-ApresentacaoFinal.pdf)
 
+- HTML, CSS e JavaScript
+  - 
