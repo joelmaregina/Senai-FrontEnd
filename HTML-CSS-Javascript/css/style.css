@@ -1,28 +1,47 @@
-
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body{
+    padding-top: 25px;
     background-color: #2F323A;
     color: white;
 }
 
 .header{
-    height: 210px;
+    height: 150px;
 }
 
 .logo a img {
-    width: 455px;
-    height: 206px;
+    width: 300px;
+    height: 145px;
 }
 
 .container-grid{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
+}
+
+.container-grid-smaller {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.posicionamento-header .campo-busca{
+    background-color: #396A94;
+    border-radius: 15px;
+    width: 300px;
+    height: 45px;
+    border: solid 3px #3F88C5;
+}
+
+input::placeholder{
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 19px;
+    text-align: center;
 }
 
 .posicionamento-header{
@@ -34,24 +53,94 @@ body{
 
 .carrinho {
     font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #9C2A39;
+    padding: 5px 25px;
+    border-radius: 15px;
+    transition: 400ms;
+}
+
+.carrinho:hover{
+    background-color: #D72638;
+    padding: 7px 30px;
+    transition: 400ms;
+}
+
+.carrinho:active{
+    background-color: #3F88C5;
+    padding: 7px 30px;
+    transition: 400ms;
+}
+
+.carrinho a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.carrinho img {
+    width: 30px;
+    height: 30px;
 }
 
 .login{ 
     font-family: 'Saira Extra Condensed', sans-serif;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: 100;  
+    text-transform: uppercase;  
+    background-color: #9C2A39;
+    padding: 5px 25px;
+    border-radius: 15px;
+    transition: 400ms;
+}
+
+.login:hover{
+    background-color: #D72638;
+    padding: 7px 30px;
+    transition: 400ms;
+}
+
+.login:active{
+    background-color: #3F88C5;
+    padding: 7px 30px;
+    transition: 400ms;
+}
+
+.login a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.login img {
+    width: 30px;
+    height: 30px;
 }
 
 .menu {
     width: 750px;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .menu a {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     color: white;
     text-decoration: none;
+    transition: 400ms;
+}
+
+.menu a:hover {
+    color: #3F88C5;
+    font-size: 24px;
+    transition: 400ms;
+    font-weight: 300;
+    font-family: 'Saira', sans-serif;
 }
 
 .banner {
@@ -61,7 +150,6 @@ body{
     background-position: center;
     background-size: cover;
     font-family: 'Saira', sans-serif;
-
 }
 
 .itens-banner {
@@ -72,12 +160,26 @@ body{
 }
 
 .texto-banner-esquedo{
-    width: 350px;
+    width: 300px;
+    font-size: 12px;
     text-align: center;
 }
 
+.texto-banner-esquedo a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    transition: 400ms;
+}
+
+.texto-banner-esquedo a:hover{
+    text-decoration: none;
+    color: #D72638;
+    transition: 400ms;
+}
+
 .texto-banner-direito{
-    width: 350px;
+    width: 300px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -86,54 +188,127 @@ main {
 }
 
 .cards {
-    margin: 30px;
+    margin: 20px 0 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 12px;
 }
 
 .cards img {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
+    
 }
 
 .cards img .caminhao {
-    width: 40.37px;
-    height: 25.27px;
+    width: 51.37px;
+    height: 35.27px;
+    margin-right: 10px;
 }
 
 .card {
     padding: 5px 10px;
-    background-color: #D72638;
-    border: 2px solid #D72638;
+    background-color: #9C2A39;
+    border: 2px solid #9C2A39;
     border-radius: 15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.card:hover{
+    background-color: #D72638;
+    transition: 400ms;
+}
+
+.titulo-secao {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    transition: 400ms;
+}
+
+.titulo-secao p {
+    background: #9C2A39;
+    padding: 4px 50px;
+    border: 2px solid #D72638;
+    border-radius: 15px;
+}
+
+.titulo-secao p:hover{
+    background-color: #D72638;
+    transition: 400ms;
+}
+
+.titulo-secao p:active{
+    background-color: #3F88C5;
+    border-color: #3F88C5;
+    transition: 400ms;
+}
+
+
+.mais-vendidos a{
+    text-decoration: none;
+    color: white;
 }
 
 .produtos-promocao {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-.produtos-mais-vendidos {
+.promocao a{
+    text-decoration: none;
+    color: white; 
+}
+
+.produtos-mais-vendidos-top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-.titulo-secao {
-    font-family: 'Saira Semi Condensed', sans-serif;
-    padding: 10px;
-    margin: 30px;
-    background-color: #D72638;
-    border: 2px solid #D72638;
-    border-radius: 15px;
+.produtos-mais-vendidos-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .produto{
     text-align: center;
+    transition: 400ms;
+}
+
+.produto:hover{
+    font-size: 18px;
+    transition: 400ms;
+}
+
+.price-red{
+    color: red;
+}
+
+.price-green{
+    color: green;
+}
+
+.produto a {
+    text-decoration: none;
+    color: white;
+}
+
+.nome-produto {
+    margin-top: 10px;
+    margin-bottom: 7px;
+
 }
 
 .nome-produto {
@@ -144,25 +319,100 @@ main {
 .produtos-promocao .produto img {
     width: 230px;
     height: 129px;
+    opacity: 0.8;
+    transition: 400ms;
 }
 
-.produtos-mais-vendidos .produto img {
+.produtos-promocao .produto img:hover {
+    width: 240px;
+    height: 139px;
+    opacity: 1.0;
+    transition: 400ms;
+}
+
+.produtos-mais-vendidos-top .produto img {
     width: 230px;
     height: 129px;
+    opacity: 0.8;
+    transition: 400ms;
 }
 
+.produtos-mais-vendidos-top .produto img:hover {
+    width: 240px;
+    height: 139px;
+    opacity: 1.0;
+    transition: 400ms;
+}
+
+.produtos-mais-vendidos-bottom .produto img {
+    width: 230px;
+    height: 129px;
+    opacity: 0.8;
+    transition: 400ms;
+}
+
+.produtos-mais-vendidos-bottom .produto img:hover {
+    width: 240px;
+    height: 139px;
+    opacity: 1.0;
+    transition: 400ms;
+}
 
 .preco-produto {
     font-family: 'Rightheous', sans-serif;
+    margin-bottom: 7px;
 }
 
-.footer-superior {
+.footer{
+    transition: 400ms;
+}
+
+.footer a:hover {
+    color: #D72638;
+    transition: 400ms;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.footer-azul {
     background-color: #154B79;
+    padding: 15px;
+}
+
+.logo-footer img {
+    width: 250px;
+    height: 120px;
+}
+
+.footer-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .titulo-bloco-footer {
     font-family: 'Saira Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
 }
+
+.blocofooter {
+    display: flex;
+    flex-direction: column;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 18px;
+}
+
+
+.blocofooter .campo-email {
+    margin-top: 10px;
+    background-color: #A62F49;
+    border-radius: 12px;
+    height: 38px;
+    border: none;
+}
+
 
 .blocofooter a {
     color: white;
@@ -174,6 +424,54 @@ main {
     font-family: "Saira Condensed", sans-serif;
 }
 
+.blocofooter .icone-contato {
+    height: 15px;
+    width: 15px;
+}
+
+.meios-de-contato a{
+    font-family: "Saira Condensed", sans-serif;
+    display: flex;
+    align-items: center;
+    
+}
+
+.meios-de-contato img {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.contatos{
+    display: flex;
+}
+
 .footer-inferior{
     font-family: 'Saira Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-inferior img{
+    width: 45px;
+    height:45px;
+    margin-left: 15px;
+    margin-top: 20px;
+    opacity: 0.70;
+    transition: 750ms;
+}
+
+.footer-inferior img:hover{
+    opacity: 1.00;
+    transition: 750ms;
+    width: 50px;
+    height:50px;
+}
+
+.footer-inferior-sociais{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
