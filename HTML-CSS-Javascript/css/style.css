@@ -319,7 +319,7 @@ main {
 .produtos-promocao .produto img {
     width: 230px;
     height: 129px;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 400ms;
 }
 
@@ -333,7 +333,7 @@ main {
 .produtos-mais-vendidos-top .produto img {
     width: 230px;
     height: 129px;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 400ms;
 }
 
@@ -347,7 +347,7 @@ main {
 .produtos-mais-vendidos-bottom .produto img {
     width: 230px;
     height: 129px;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 400ms;
 }
 

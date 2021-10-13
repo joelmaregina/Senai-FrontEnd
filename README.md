@@ -14,7 +14,7 @@ _Repositório criado para armazenar códigos e arquivos relacionados à parte Fr
   - [x] [Final presentation of prototypes (_Apresentação final dos protótipos_).](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/UI-UX-And-Prototyping(SA1)/Prototypes/Joelma-ApresentacaoFinal.pdf)
 
 - [HTML, CSS e JavaScript](https://github.com/joelmaregina/Senai-FrontEnd/tree/master/HTML-CSS-Javascript)
-  - Building the previous prototype design with: (_Construindo o projeto do protótipo anterior com_)
+  - Building the previous prototype design with: (_Construindo o projeto do protótipo anterior com:)
     - [x] [HTML;](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/index.html)
     - [x] [CSS with Flexbox;](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/css/style.css)
     - [ ] Responsive;
