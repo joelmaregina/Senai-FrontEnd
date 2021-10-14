@@ -11,7 +11,8 @@ body{
 }
 
 .header{
-    height: 150px;
+    margin-top: 10px;
+    height: 180px;
 }
 
 .logo a img {
@@ -53,23 +54,22 @@ input::placeholder{
 
 .carrinho {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 20px;
     font-weight: 100;
     background-color: #9C2A39;
-    padding: 5px 25px;
+    padding: 1px 25px;
     border-radius: 15px;
     transition: 400ms;
 }
 
 .carrinho:hover{
     background-color: #D72638;
-    padding: 7px 30px;
+    padding: 3px 30px;
     transition: 400ms;
 }
 
 .carrinho:active{
     background-color: #3F88C5;
-    padding: 7px 30px;
+    padding: 3px 30px;
     transition: 400ms;
 }
 
@@ -81,8 +81,15 @@ input::placeholder{
 }
 
 .carrinho img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.carrinho h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 5px;
+    margin-top: 4%;
 }
 
 .login{ 
@@ -91,20 +98,20 @@ input::placeholder{
     font-weight: 100;  
     text-transform: uppercase;  
     background-color: #9C2A39;
-    padding: 5px 25px;
+    padding: 1px 25px;
     border-radius: 15px;
     transition: 400ms;
 }
 
 .login:hover{
     background-color: #D72638;
-    padding: 7px 30px;
+    padding: 3px 30px;
     transition: 400ms;
 }
 
 .login:active{
     background-color: #3F88C5;
-    padding: 7px 30px;
+    padding: 3px 30px;
     transition: 400ms;
 }
 
@@ -116,8 +123,15 @@ input::placeholder{
 }
 
 .login img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.login h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 5px;
+    margin-top: 4%;
 }
 
 .menu {
@@ -143,7 +157,29 @@ input::placeholder{
     font-family: 'Saira', sans-serif;
 }
 
-.banner {
+.barras {
+    width: 30px;
+    display: none;
+}
+
+.menu-tablet {
+    display: none;
+}
+
+.menu-tablet a{
+    font-family: 'Saira Condensed', sans-serif;
+    display: none;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+main {
+    font-family: 'Saira', sans-serif;
+}
+
+.banner{
     height: 300px;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
@@ -159,9 +195,11 @@ input::placeholder{
     align-items: center;
 }
 
-.texto-banner-esquedo{
+.texto-banner-esquedo h1{
     width: 300px;
-    font-size: 12px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -177,28 +215,39 @@ input::placeholder{
     transition: 400ms;
 }
 
-.texto-banner-direito{
+.texto-banner-direito h1{
     width: 300px;
-    font-size: 12px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
     text-align: center;
 }
 
-main {
-    font-family: 'Saira', sans-serif;
-}
-
 .cards {
-    margin: 20px 0 40px 0;
+    margin: 40px 0 50px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Saira Semi Condensed', sans-serif;
-    font-size: 12px;
 }
 
-.cards img {
-    width: 30px;
-    height: 30px;
+.card-informativo {
+    padding: 3px 14px;
+    background-color: #9C2A39;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;    
+    align-items: center;
+}
+
+.card-informativo:hover{
+    background-color: #D72638;
+    transition: 400ms;
+}
+
+.cards .card-informativo img {
+    width: 28px;
+    height: 28px;
     margin-right: 10px;
     
 }
@@ -209,19 +258,9 @@ main {
     margin-right: 10px;
 }
 
-.card {
-    padding: 5px 10px;
-    background-color: #9C2A39;
-    border: 2px solid #9C2A39;
-    border-radius: 15px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-.card:hover{
-    background-color: #D72638;
-    transition: 400ms;
+.card-informativo h2 {
+    font-size: 20px;
+    padding-top: 6px;
 }
 
 .titulo-secao {
@@ -234,9 +273,10 @@ main {
 
 .titulo-secao p {
     background: #9C2A39;
-    padding: 4px 50px;
+    padding: 4px 60px;
     border: 2px solid #D72638;
     border-radius: 15px;
+    font-size: 25px;
 }
 
 .titulo-secao p:hover{
@@ -249,7 +289,6 @@ main {
     border-color: #3F88C5;
     transition: 400ms;
 }
-
 
 .mais-vendidos a{
     text-decoration: none;
@@ -268,6 +307,16 @@ main {
     color: white; 
 }
 
+.promocao a h4{
+    font-size: 18px;
+    transition: 400ms;
+}
+
+.promocao a h4:hover{
+    font-size: 20px;
+    transition: 400ms;
+}
+
 .produtos-mais-vendidos-top {
     display: flex;
     align-items: center;
@@ -284,11 +333,6 @@ main {
 
 .produto{
     text-align: center;
-    transition: 400ms;
-}
-
-.produto:hover{
-    font-size: 18px;
     transition: 400ms;
 }
 
@@ -330,6 +374,16 @@ main {
     transition: 400ms;
 }
 
+.mais-vendidos a h4{
+    font-size: 18px;
+    transition: 400ms;
+}
+
+.mais-vendidos a h4:hover{
+    font-size: 20px;
+    transition: 400ms;
+}
+
 .produtos-mais-vendidos-top .produto img {
     width: 230px;
     height: 129px;
@@ -367,6 +421,15 @@ main {
     transition: 400ms;
 }
 
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
 .footer a:hover {
     color: #D72638;
     transition: 400ms;
@@ -386,6 +449,7 @@ main {
 
 .footer-superior{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -400,6 +464,7 @@ main {
 .blocofooter {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: "Saira Condensed", sans-serif;
     font-size: 18px;
 }
@@ -474,4 +539,487 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+
+/* *******Responsividade******* */
+
+@media screen and (max-width: 1200px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    .container-grid-smaller {
+        width: 80%;
+    }
+
+    .logo a img {
+        width: 210px;
+        height: 110px;
+    }
+
+    .posicionamento-header {
+        justify-content: space-evenly;
+    }
+
+    .posicionamento-header .campo-busca{
+        background-color: #396A94;
+        border-radius: 10px;
+        width: 250px;
+        height: 35px;
+        border: solid 2px #3F88C5;
+    }
+
+        
+    input::placeholder{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .carrinho {
+        padding: 0px 10px;
+        border-radius: 10px;
+        transition: 400ms;
+    }
+
+    .carrinho:hover{
+        background-color: #D72638;
+        padding: 1px 12px;
+        transition: 400ms;
+    }
+       
+    .carrinho:active{
+        background-color: #3F88C5;
+        padding: 1px 12px;
+        transition: 400ms;
+    }  
+    
+    .carrinho img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    
+    .carrinho h3 {
+        font-size: 1.3rem;
+        margin-top: 4%;
+    }
+    
+    .login{ 
+        font-size: 20px;
+        padding: 0px 8px;
+        border-radius: 10px;
+        transition: 400ms;
+    }
+    
+    .login:hover{
+        background-color: #D72638;
+        padding: 0px 8px;
+        transition: 400ms;
+    }
+    
+    .login:active{
+        background-color: #3F88C5;
+        padding: 1px 12px;
+        transition: 400ms;
+    }
+   
+    .login img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    
+    .login h3 {
+        font-size: 1.3rem;    
+    } 
+      
+    .menu {
+        width: 35rem;
+    }
+    
+    .menu a {
+        font-size: 1.2rem;
+    }
+    
+    .menu a:hover {
+        font-size: 1.2rem;
+    }
+
+    .itens-banner{
+        width: 72%;
+    }
+
+    .banner{
+        height: 210px;
+    }
+    
+    .texto-banner-esquedo h1{
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+      
+    .texto-banner-direito h1{
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+  
+    .card-informativo {
+        padding: 1px 5px;
+        background-color: #9C2A39;
+        border-radius: 10px;
+    }
+       
+    .cards .card-informativo img {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 5px;
+        
+    }
+    
+    .cards img .caminhao {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 5px;
+    }
+    
+    .card-informativo h2 {
+        font-size: 1.2rem;
+        padding-top: 6px;
+    }
+   
+    .titulo-secao p {
+        padding: 2px 40px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }       
+   
+    .produtos-promocao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }    
+  
+    .promocao a h4{
+        font-size: 0.9rem;
+    }
+    
+    .promocao a h4:hover{
+        font-size: 1.0rem;
+    }       
+       
+    .produtos-promocao .produto img {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-promocao .produto img:hover {
+        width: 190px;
+        height: 105px;
+    }
+    
+    .mais-vendidos a h4{
+        font-size: 0.9rem;
+    }
+    
+    .mais-vendidos a h4:hover{
+        font-size: 1.0rem;
+
+    }    
+    .produtos-mais-vendidos-top .produto img {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-mais-vendidos-top .produto img:hover {
+        width: 190px;
+        height: 105px;
+    }
+    
+    .produtos-mais-vendidos-bottom .produto img {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-mais-vendidos-bottom .produto img:hover {
+        width: 190px;
+        height: 105px;
+    } 
+
+    .footer a{
+        font-size: 1.0rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .footer p {
+        margin-bottom: 2.0rem;
+    }
+    
+    .footer a:hover {
+        font-size: 1.3rem;
+    }    
+
+    .logo-footer img {
+        width: 185px;
+        height: 95px;
+    }
+    
+    .blocofooter .campo-email {
+        margin-top: 10px;
+        background-color: #A62F49;
+        border-radius: 8px;
+        height: 1.8rem;
+        border: none;
+    }  
+   
+    .footer-inferior img{
+        margin-left: 20px;
+        margin-top: 30px;
+    } 
+}
+
+@media screen and (max-width: 805px) {
+    .container-grid {
+        width: 95%;
+    }
+
+    .container-grid-smaller {
+        width: 85%;
+    }
+
+    .logo a img {
+        width: 170px;
+        height: 75px;
+    }
+
+    .posicionamento-header {
+        justify-content: space-evenly;
+    }
+
+    .posicionamento-header .campo-busca{
+        background-color: #396A94;
+        border-radius: 7px;
+        width: 165px;
+        height: 27px;
+        border: solid 2px #3F88C5;
+    }
+        
+    input::placeholder{
+        font-size: 14px;
+     }
+
+    .carrinho {
+        padding: 0px 7px;
+        border-radius: 7px;
+     }
+
+    .carrinho:hover{
+        background-color: #D72638;
+        padding: 0px 9px;
+    }
+       
+    .carrinho:active{
+        background-color: #3F88C5;
+        padding: 0px 9px;
+    }  
+    
+    .carrinho img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    
+    .carrinho h3 {
+        font-size: 1.1rem;
+        margin-top: 10%;
+    }
+    
+    .login{ 
+        padding: 0px 7px;
+        border-radius: 7px;
+    }
+    
+    .login:hover{
+        background-color: #D72638;
+        padding: 0px 9px;
+    }
+    
+    .login:active{
+        background-color: #3F88C5;
+        padding: 0px 9px;
+    }
+   
+    .login img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    
+    .login h3 {
+        font-size: 1.1rem;    
+    } 
+      
+    .menu {
+        width: 35rem;
+        display: none;
+    }
+    
+    .barras{
+        display: inline-block;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+    
+    .menu a:hover {
+        font-size: 1.2rem;
+    }
+
+    .itens-banner{
+        width: 72%;
+    }
+
+    .banner{
+        height: 210px;
+    }
+    
+    .texto-banner-esquedo h1{
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+      
+    .texto-banner-direito h1{
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+  
+    .card-informativo {
+        padding: 1px 5px;
+        background-color: #9C2A39;
+        border-radius: 10px;
+    }
+       
+    .cards .card-informativo img {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 5px;
+        
+    }
+    
+    .cards img .caminhao {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 5px;
+    }
+    
+    .card-informativo h2 {
+        font-size: 1.2rem;
+        padding-top: 6px;
+    }
+   
+    .titulo-secao p {
+        padding: 2px 40px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }       
+   
+    .produtos-promocao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }    
+  
+    .promocao a h4{
+        font-size: 0.9rem;
+    }
+    
+    .promocao a h4:hover{
+        font-size: 1.0rem;
+    }       
+       
+    .produtos-promocao .produto img {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-promocao .produto img:hover {
+        width: 190px;
+        height: 105px;
+    }
+    
+    .mais-vendidos a h4{
+        font-size: 0.9rem;
+    }
+    
+    .mais-vendidos a h4:hover{
+        font-size: 1.0rem;
+
+    }    
+    .produtos-mais-vendidos-top .produto img {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-mais-vendidos-top .produto img:hover {
+        width: 190px;
+        height: 105px;
+    }
+    
+    .produtos-mais-vendidos-bottom .produto img {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-mais-vendidos-bottom .produto img:hover {
+        width: 190px;
+        height: 105px;
+    } 
+
+    .footer a{
+        font-size: 1.0rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .footer p {
+        margin-bottom: 2.0rem;
+    }
+    
+    .footer a:hover {
+        font-size: 1.3rem;
+    }    
+
+    .logo-footer img {
+        width: 185px;
+        height: 95px;
+    }
+    
+    .blocofooter .campo-email {
+        margin-top: 10px;
+        background-color: #A62F49;
+        border-radius: 8px;
+        height: 1.8rem;
+        border: none;
+    }  
+   
+    .footer-inferior img{
+        margin-left: 20px;
+        margin-top: 30px;
+    } 
+}
+
+@media screen and (max-width: 320px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    .container-grid-smaller {
+        width: 80%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .barras {
+        display: inline-block;
+    }
+    
 }

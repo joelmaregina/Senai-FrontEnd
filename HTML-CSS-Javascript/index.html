@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">        
+        <link rel="shortcut icon" href="img/Favicon-Black.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">        
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;300&family=Saira+Extra+Condensed:wght@100;200&family=Saira+Semi+Condensed:wght@300&family=Saira:wght@100;200;300&display=swap" rel="stylesheet">
-        <title> Game Mania </title>
+        <title> Game Mania - Home </title>
     </head>
     <body>
         <header class="header">
@@ -19,7 +20,7 @@
                 <div class="logo">
                     <a href="index.html"><img src="img/GameManiaNeon.png" alt="Logotipo da loja"></a>
                 </div>                
-                <div class="">
+                <div class=" menu-superior">
                     <div class="posicionamento-header"> 
                         <input type="text" placeholder="Digite sua busca aqui" class="campo-busca">
                         <div class="carrinho">
@@ -29,15 +30,16 @@
                             <a href="#"><img src="img/user.png" alt=""><h3>Login | Cadastro</h3> </a>
                         </div>
                     </div>
-                    <nav class= menu>
+                    <nav id="menu" class= menu>
                         <a href="consoles.html"> Consoles </a>
                         <a href="jogos.html"> Jogos </a>
                         <a href="computadores.html"> Computadores </a>
                         <a href="controles.html"> Controles </a>
                         <a href="#"> Acessórios </a>
-                        <a href="#"> Raridades </a>
+                        <a href="#"> Celulares </a>
                         <a href="#"> Promoções </a>
-                    </nav>
+                    </nav>                    
+                    <a href="#" onclick="mostraMenu()"><img src="img/menu.png" class="barras" alt="Menu de barras"></a>
                 </div>
             </div>
         </header>
@@ -52,13 +54,13 @@
             </div>           
         </main>
         <section class="cards">
-            <div class="card">
+            <div class="card-informativo">
                 <img src="img/cadeado-trancado.png" alt=""> <h2>Compra no site 100% segura</h2>
             </div>
-            <div class="card">
+            <div class="card-informativo">
                 <img src="img/pagamento-com-cartao-de-credito.png" alt=""><h2> Aceitamos todos os cartões </h2>
             </div>
-            <div class="card">
+            <div class="card-informativo">
                 <img src="img/caminhao-de-entrega.png" alt="" class="caminhao"> <h2>Frete Grátis Norte-Nordeste</h2>
             </div>
         </section>
@@ -69,24 +71,21 @@
                         <a href="#">
                             <img src="img/console.jpeg" alt="Foto de console de video game vermelho e retrô">
                             <h4 class="nome-produto"> Console Retrô Vermelho </h4>
-                            <h4 class="preco-produto">de: <strong class="price-red"> R$1250,00 </strong> </h4>                
-                            <h4 class="preco-produto">por apenas: <strong class="price-green">R$1000,00 </strong></h4>
+                            <h4 class="preco-produto">de: <strong class="price-red"> R$1250,00 </strong> <br> por apenas: <strong class="price-green">R$1000,00 </strong></h4>
                         </a>
                     </div>
                     <div class="produto">
                         <a href="#">
                             <img src="img/Headphone.jpg" alt="Foto de um Headphone preto">
                             <h4 class="nome-produto"> Headphone Gaming Pro </h4>
-                            <h4 class="preco-produto">de: <strong class="price-red">R$250,00</strong></h4> 
-                            <h4 class="preco-produto"> por apenas: <strong class="price-green">R$200,00</strong></h4>
+                            <h4 class="preco-produto">de: <strong class="price-red">R$250,00</strong> <br> por apenas: <strong class="price-green">R$200,00</strong></h4>
                         </a>
                     </div>
                     <div class="produto">
                         <a href="#">
                             <img src="img/vr3.jpeg" alt="Foto de um óculos VR em uso por um homem">
                             <h4 class="nome-produto"> Óculos VR Ultimate 7C </h4>
-                            <h4 class="preco-produto">de: <strong class="price-red">R$799,00 </strong></h4>
-                            <h4 class="preco-produto">por apenas: <strong class="price-green">R$699,00</strong></h4>                                
+                            <h4 class="preco-produto">de: <strong class="price-red">R$799,00 </strong> <br> por apenas: <strong class="price-green">R$699,00</strong></h4>                                
                         </a>
                     </div>
                 </div>               
@@ -98,24 +97,21 @@
                         <a href="#">
                             <img src="img/mario.jpeg" alt="Foto de uma boneco do Mario Bross">
                             <h4 class="nome-produto">Miniatura Mario Bross</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 59,98</strong> em até </h4>
-                            <h4 class="preco-produto"> 10X sem juros</h4>
+                            <h4 class="preco-produto"> <strong class="price-green">R$ 59,98</strong> em até <br> 10X sem juros</h4>
                         </a>
                     </div>
                     <div class="produto">
                         <a href="#">
                             <img src="img/nintendo.jpeg" alt="Foto do console Nintendo Switch">
                             <h4 class="nome-produto">Nintendo Switch</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 2199,97</strong> em até </h4>
-                            <h4 class="preco-produto"> 12X sem juros</h4>
+                            <h4 class="preco-produto"> <strong class="price-green">R$ 2199,97</strong> em até <br> 12X sem juros</h4>
                         </a>
                     </div>
                     <div class="produto"> 
                         <a href="#">
                             <img src="img/tablet.jpeg" alt="Foto de um tablet">
                             <h4 class="nome-produto">Tablet Infomais Tech </h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 1699,99</strong> em até </h4>
-                            <h4 class="preco-produto"> 12X sem juros</h4>
+                            <h4 class="preco-produto"> <strong class="price-green">R$ 1699,99</strong> em até <br> 12X sem juros</h4>
                         </a>
                     </div>
                 </div>
@@ -124,34 +120,31 @@
                         <a href="#">
                             <img src="img/teclado-gamer.jpg" alt="Foto de um teclado preto de computador">
                             <h4 class="nome-produto">Teclado Gamer Ligth</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 75,99 </strong>em até </h4>
-                            <h4 class="preco-produto"> 10X sem juros</h4>                                
+                            <h4 class="preco-produto"> <strong class="price-green">R$ 75,99 </strong>em até <br> 10X sem juros</h4>                                
                         </a>
                     </div>
                     <div class="produto">
                         <a href="#">
                             <img src="img/Mouse.jpeg" alt="Foto de um mouse preto de computador retroiluminado com luzes coloridas">
                             <h4 class="nome-produto">Mouse Gamer Rainbow</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$79,99</strong> em até </h4>
-                            <h4 class="preco-produto"> 10X sem juros</h4>
+                            <h4 class="preco-produto"> <strong class="price-green">R$79,99</strong> em até <br> 10X sem juros</h4>
                         </a>
                     </div>
                     <div class="produto">
                         <a href="#">
                             <img src="img/PS4.jpeg" alt="Foto do console do Playstation 4">
                             <h4 class="nome-produto">Console Playstation 4</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 1799,98 </strong>em até </h4>
-                            <h4 class="preco-produto"> 12X sem juros</h4>                                
+                            <h4 class="preco-produto"> <strong class="price-green">R$ 1799,98 </strong>em até <br> 12X sem juros</h4>                                
                         </a>
                     </div>
                 </div>             
         </section>
         <footer class= "footer">
             <div class="footer-azul ">
-                <div class="footer-superior container-grid-smaller">
+                <div class="footer-superior container-grid">
                     <div class="blocofooter">
                         <a href="index.html" class="logo-footer"><img src="img/GameManiaFooter.png" alt="Logotipo da loja"></a>
-                        <label for ="email" class="titulo-bloco-footer">Assine nossa newsletter: </label>
+                        <label for ="email" class="titulo-bloco-footer"> <p> Assine nossa newsletter:</p> </label>
                         <input id="email" type="text" placeholder="seuemail.@email.com" class="campo-email">
                     </div>
                     <div class="blocofooter">
@@ -198,7 +191,8 @@
                     <a href="#"><img src="img/WhiteInstagram.png" alt="Icone Instagram"></a>
                 </div>
             </div>
-        </footer>          
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>          
     </body>
-    <script></script>
 </html>
