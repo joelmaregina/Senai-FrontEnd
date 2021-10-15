@@ -253,9 +253,9 @@ main {
     
 }
 
-.cards img .caminhao {
-    width: 51.37px;
-    height: 35.27px;
+.cards #caminhao {
+    width: 43.37px;
+    height: 40.27px;
     margin-right: 10px;
 }
 
@@ -266,6 +266,7 @@ main {
 
 .titulo-secao {
     font-family: 'Saira Semi Condensed', sans-serif;
+    text-transform: uppercase;
     margin: 30px;
     display: flex;
     justify-content: center;
@@ -545,6 +546,10 @@ main {
     margin-bottom: 20px;
 }
 
+#botao-fale-conosco {
+    display: none;
+}
+
 /************************* Responsividade - Desktop menores *************************************************************************************/
 
 @media screen and (max-width: 1200px) {
@@ -678,7 +683,7 @@ main {
         
     }
     
-    .cards img .caminhao {
+    .cards #caminhao {
         width: 1.6rem;
         height: 1.6rem;
         margin-right: 5px;
@@ -768,6 +773,10 @@ main {
     .logo-footer img {
         width: 185px;
         height: 95px;
+    }
+
+    .blocofooter{
+        margin: 5px;
     }
 
     .blocofooter .campo-email {
@@ -954,7 +963,7 @@ main {
         margin-right: 3px;
     }
     
-    .cards img .caminhao {
+    .cards #caminhao{
         width: 1.3rem;
         height: 1.3rem;
         margin-right: 3px;
@@ -1061,6 +1070,7 @@ main {
     .footer a:hover {
         font-size: 1.0rem;
     }
+
     .blocofooter{
         margin: 0 7px;
     }    
@@ -1106,21 +1116,368 @@ main {
 
 /************************* Responsividade - Mobile *************************************************************************************/
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 534px ) {
+
+    body {
+        padding-top: 0;
+    }
+
     .container-grid {
-        width: 90%;
+        width: 95%;
     }
 
     .container-grid-smaller {
-        width: 80%;
+        width: 85%;
+    }
+
+    .header {
+        height: 150px;
+    }
+
+    .logo a img {
+        width: 128px;
+        height: 72px;
+    }
+
+    .posicionamento-header-direito {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .posicionamento-header .campo-busca{
+        background-color: #396A94;
+        border-radius: 5px;
+        width: 120px;
+        height: 25px;
+        border: solid 2px #3F88C5;
+        margin-right: 10px;
+        margin-bottom: 22px;
+    }
+        
+    input::placeholder{
+        font-size: 14px;
+     }
+
+    .carrinho {
+        padding: 0 3px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 22px;
+     }
+
+    .carrinho:hover{
+        background-color: #D72638;
+        padding: 0 4px;
+    }
+       
+    .carrinho:active{
+        background-color: #3F88C5;
+        padding: 0 4px;
+    }  
+    
+    .carrinho img {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    
+    .carrinho h3 {
+        font-size: 0.8rem;
+        padding-top: 2px;
+    }
+    
+    .login{ 
+        padding: 0px 3px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 22px;
+    }
+    
+    .login:hover{
+        background-color: #D72638;
+        padding: 0px 5px;
+    }
+    
+    .login:active{
+        background-color: #3F88C5;
+        padding: 0px 4px;
+    }
+   
+    .login img {
+        width: 0.9rem;
+        height: 0.9rem;
+        padding-top: 2px;
+    }
+    
+    .login h3 {
+        margin-top: 5px;
+        font-size: 1.0rem;    
+    } 
+         
+    .barras{
+        display: flex;
     }
 
     .menu {
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        border-radius: 7px;
+        width: 100px;
+        height: 350px;
+        padding: 20px 10px;
+        position: absolute;
+        top: 90px;
+        right: 0;
+    }
+
+    .posicionamento-header{
+        position: relative;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+    }
+    
+    .menu a:hover {
+        font-size: 0.9rem;
+    }
+  
+    .itens-banner{
+        width: 85%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .itens-banner h1{
+        margin-bottom: 0;
+    }
+    
+    .banner{
+        background-image: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%), url(../img/banner.png);
+        height: 170px;
+    }
+    
+    .texto-banner-esquedo h1{
+        width: 100%;
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+      
+    .texto-banner-direito h1{
+        width: 100%;
+        font-size:0.85rem;
+        line-height: 1.5rem;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        margin: 15px 0 30px 0;
+    }
+  
+    .card-informativo {
+        padding: 1px 5px;
+        border-radius: 5px;
+        margin: 10px
+    }
+       
+    .cards .card-informativo img {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 3px;
+    }
+    
+    .cards .card-informativo #caminhao{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 3px;
+    }
+    
+    .card-informativo h2 {
+        font-size: 0.9rem;
+        padding-top: 6px;
+    }
+
+    .titulo-secao{
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+   
+    .titulo-secao p {
+        padding: 5px 10px;
+        border-radius: 7px;
+        font-size:1.0rem;
+    }       
+   
+    .produtos-promocao {
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .produto {
+        margin-bottom: 40px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+  
+    .promocao a h4{
+        font-size: 0.8rem;
+    }
+    
+    .promocao a h4:hover{
+        font-size: 0.9rem;
+    }       
+       
+    .produtos-promocao .produto img {
+        width: 170px;
+        height: 85px;
+    }
+    
+    .produtos-promocao .produto img:hover {
+        width: 180px;
+        height: 95px;
+    }
+          
+    .produtos-promocao {
+        margin-bottom: 0px;
+    }
+
+    .produtos-mais-vendidos-top{
+        justify-content: space-evenly;
+        margin-bottom: 0px;
+    }
+
+    .produtos-mais-vendidos-bottom{
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+
+    .mais-vendidos a h4{
+        font-size: 0.8rem;
+    }
+    
+    .mais-vendidos a h4:hover{
+        font-size: 0.9rem;
+    }   
+
+    .produtos-mais-vendidos-top .produto img {
+        width: 170px;
+        height: 85px;
+    }
+    
+    .produtos-mais-vendidos-top .produto img:hover {
+        width: 180px;
+        height: 95px;
+    }
+    
+    .produtos-mais-vendidos-bottom .produto img {
+        width: 170px;
+        height: 85px;
+    }
+    
+    .produtos-mais-vendidos-bottom .produto img:hover {
+        width: 180px;
+        height: 95px;
+    } 
+
+    .footer a{
+        font-size: 0.9rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .footer p {
+        margin-bottom: 0.6rem;
+        font-size: 1.1rem;
+    }
+    
+    .footer a:hover {
+        font-size: 1.0rem;
+    }
+
+    .blocofooter{
+        margin: 15px 7px;
+    }
+    
+    .titulo-bloco-footer{
+        margin-bottom: 10px;
+    }
+
+    .logo-footer img {
+        width: 175px;
+        height: 85px;
+    }
+
+    .meios-de-contato {
+        font-size: 0.9rem;
+    }
+
+    .meios-de-contato p{
+        font-size: 0.9rem;
+    }
+
+    .blocofooter{
+        flex-direction: column;
+    }
+    
+    .blocofooter .campo-email {
+        margin-top: 5px;
+        border-radius: 5px;
+        height: 1.8rem;
+        border: none;
+    } 
+
+    .meios-de-contato{
         display: none;
     }
 
-    .barras {
-        display: inline-block;
+    #botao-fale-conosco{
+        display: flex;
+    }
+
+    #botao-fale-conosco p{
+        background-color: #D72638;
+        text-transform: uppercase;
+        padding: 2px 50px;
+        border-radius: 10px;
+        transition: 400ms;
+    }
+
+    #botao-fale-conosco p:hover{
+        background-color: #3F88C5;
+        text-transform: uppercase;
+        padding: 3px 55px;
+        border-radius: 10px;
+        transition: 400ms;
     }
     
+    .footer-inferior {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 70px;
+    }
+
+    .footer-inferior p {
+        font-size: 1.0rem;
+        margin: 10px
+    }
+
+    .footer-inferior-sociais{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .redes-sociais{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .footer-inferior img{
+        width: 40px;
+        height: 40px;
+        margin: 20px 25px;
+    } 
 }

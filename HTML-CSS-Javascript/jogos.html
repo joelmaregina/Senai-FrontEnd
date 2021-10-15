@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;300&family=Saira+Extra+Condensed:wght@100;200&family=Saira+Semi+Condensed:wght@300&family=Saira:wght@100;200;300&display=swap" rel="stylesheet">
-        <title> Game Mania - Jogos </title>
+        <title> Game Mania - Home </title>
     </head>
     <body>
         <header class="header">
@@ -20,17 +20,20 @@
                 <div class="logo">
                     <a href="index.html"><img src="img/GameManiaNeon.png" alt="Logotipo da loja"></a>
                 </div>                
-                <div class="">
-                    <div class="posicionamento-header"> 
+                <div class=" menu-superior">
+                    <div class="posicionamento-header-direito"> 
                         <input type="text" placeholder="Digite sua busca aqui" class="campo-busca">
                         <div class="carrinho">
-                            <a href="#"><img src="img/carrinho-carrinho.png" alt=""> <h3>| 0 </h3></a> 
+                            <a href="#"><img src="img/carrinho-carrinho.png" alt="Ícone de carrinho de compras"> <h3>| 0 </h3></a> 
                         </div>
                         <div class= "login">
-                            <a href="#"><img src="img/user.png" alt=""><h3>Login | Cadastro</h3> </a>
+                            <a href="#"><img src="img/user.png" alt="ícone do usuário"><h3>Login | Cadastro</h3> </a>
+                        </div>
+                        <div class="menu-barras">
+                            <a href="#" onclick="mostraMenu()"><img src="img/menu.png" class="barras" alt="Menu de barras"></a>
                         </div>
                     </div>
-                    <nav class= menu>
+                    <nav id="menu" class= menu>
                         <a href="consoles.html"> Consoles </a>
                         <a href="jogos.html"> Jogos </a>
                         <a href="computadores.html"> Computadores </a>
@@ -38,7 +41,7 @@
                         <a href="#"> Acessórios </a>
                         <a href="#"> Celulares </a>
                         <a href="#"> Promoções </a>
-                    </nav>
+                    </nav>                    
                 </div>
             </div>
         </header>
@@ -49,10 +52,10 @@
         
         <footer class= "footer">
             <div class="footer-azul ">
-                <div class="footer-superior container-grid-smaller">
+                <div class="footer-superior container-grid">
                     <div class="blocofooter">
                         <a href="index.html" class="logo-footer"><img src="img/GameManiaFooter.png" alt="Logotipo da loja"></a>
-                        <label for ="email" class="titulo-bloco-footer">Assine nossa newsletter: </label>
+                        <label for ="email" class="titulo-bloco-footer"> <p> Assine nossa newsletter:</p> </label>
                         <input id="email" type="text" placeholder="seuemail.@email.com" class="campo-email">
                     </div>
                     <div class="blocofooter">
@@ -71,21 +74,24 @@
                         <a href="#">Horários de funcionamento</a>
                         <a href="#">Termos e condições de uso</a>
                     </div>
-                    <div class="blocofooter contatos">
-                        <p class="titulo-bloco-footer"> Fale Conosco </p>
+                    <div class="blocofooter contatos ">
+                        <p class="titulo-bloco-footer meios-de-contato"> Fale Conosco </p>
                         <div class="meios-de-contato">
-                            <a href="#"><img src="img/o-email.png" alt="">gamemania@email.com</a>
+                            <a href="#"><img src="img/o-email.png" alt="Ícone de uma carta">gamemania@email.com</a>
                         </div>
                         <div class="meios-de-contato">
-                            <a href="#"><img src="img/telefone-velho.png" alt="" class = "icone-contato">(71) 3333 - 0000</a>
+                            <a href="#"><img src="img/telefone-velho.png" alt="Ícone de um telefone" class = "icone-contato">(71) 3333 - 0000</a>
                         </div>
                         <div class="meios-de-contato">
-                            <a href="#"><img src="img/whatsapp.png" alt="">(71) 998899 - 9959</a>
+                            <a href="#"><img src="img/whatsapp.png" alt="´Ícone do whatsapp">(71) 998899 - 9959</a>
                         </div>
                         <div class="meios-de-contato">
-                            <img src="img/fixar-mapa.png" alt="">Rua  Setembro, nº 1609                              
+                            <img src="img/fixar-mapa.png" alt="Ícone de marcador de mapa">Rua  Setembro, nº 1609                              
                             <p>CEP: 40.444.444</p>
                             <p>SALVADOR</p>
+                        </div>
+                        <div id="botao-fale-conosco">
+                            <p>Fale conosco</p>
                         </div>
                     </div>
                 </div>
@@ -93,13 +99,16 @@
             <div class="footer-inferior container-grid">
                 <p>Copyrigth © Game Mania | All rights reserved</p>
                 <div class="footer-inferior-sociais">
-                    <p>Conecte-se com a gente:</p> 
-                    <a href="#"><img src="img/WhiteFacebook.png" alt="Icone Facebook"></a>
-                    <a href="#"><img src="img/WhiteYoutube.png" alt="Icone Youtube"></a>
-                    <a href="#"><img src="img/WhiteInstagram.png" alt="Icone Instagram"></a>
+                    <p>Conecte-se com a gente:</p>
+                    <div class="rede-sociais">
+                        <a href="#"><img src="img/WhiteFacebook.png" alt="Icone Facebook"></a>
+                        <a href="#"><img src="img/WhiteYoutube.png" alt="Icone Youtube"></a>
+                        <a href="#"><img src="img/WhiteInstagram.png" alt="Icone Instagram"></a>
+                    </div>
                 </div>
             </div>
-        </footer> 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>               
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>          
     </body>
 </html>
