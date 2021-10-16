@@ -22,7 +22,7 @@
                 </div>                
                 <div class=" menu-superior">
                     <div class="posicionamento-header-direito"> 
-                        <input type="text" placeholder="Digite sua busca aqui" class="campo-busca">
+                        <input type="search" placeholder="Digite sua busca aqui" class="campo-busca">
                         <div class="carrinho">
                             <a href="#"><img src="img/carrinho-carrinho.png" alt="Ícone de carrinho de compras"> <h3>| 0 </h3></a> 
                         </div>
@@ -146,8 +146,11 @@
                 <div class="footer-superior container-grid">
                     <div class="blocofooter">
                         <a href="index.html" class="logo-footer"><img src="img/GameManiaFooter.png" alt="Logotipo da loja"></a>
-                        <label for ="email" class="titulo-bloco-footer"> <p> Assine nossa newsletter:</p> </label>
-                        <input id="email" type="text" placeholder="seuemail.@email.com" class="campo-email">
+                        <form class="newsletter" action="">
+                            <label for ="email" class="titulo-bloco-footer"> <p> Assine nossa newsletter:</p> </label>
+                            <input id="email" type="email" placeholder="seuemail.@email.com" class="campo-email" required>
+                            <button onclick="enviarEmail()"> Enviar </button>
+                        </form>
                     </div>
                     <div class="blocofooter">
                         <p class="titulo-bloco-footer">Institucional</p>
@@ -182,7 +185,7 @@
                             <p>SALVADOR</p>
                         </div>
                         <div id="botao-fale-conosco">
-                            <p>Fale conosco</p>
+                            <a href="#"><p>Fale conosco</p></a>
                         </div>
                     </div>
                 </div>

@@ -38,6 +38,11 @@ body{
     border: solid 3px #3F88C5;
 }
 
+input {
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
 input::placeholder{
     color: white;
     font-family: 'Saira Condensed', sans-serif;
@@ -474,6 +479,10 @@ main {
     font-size: 18px;
 }
 
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
 
 .blocofooter .campo-email {
     margin-top: 10px;
@@ -483,6 +492,20 @@ main {
     border: none;
 }
 
+.blocofooter button{
+    background-color: #3F88C5;
+    font-family: 'Saira', sans-serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 400ms;
+}
+
+.blocofooter button:active{
+    background-color: #D72638;
+    transition: 400ms;
+}
 
 .blocofooter a {
     color: white;

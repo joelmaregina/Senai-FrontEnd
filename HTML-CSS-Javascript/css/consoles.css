@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 25px;
+    background-color: #2F323A;
+    color: white;
+}
+
+.banner-consoles{
+    height: 225px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/console.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Saira', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.banner-consoles h1{
+    text-align: center;
+}
+
+.produtos {
+    margin-top: 30px;
+}
