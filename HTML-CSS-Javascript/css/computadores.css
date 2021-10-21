@@ -25,3 +25,17 @@ body{
 .banner-computadores h1{
     text-align: center;
 }
+
+.imagem_compra{
+    width: 210px;
+    height: 120px;
+    opacity: 0.7;
+    transition: 400ms;
+}
+
+.imagem_compra:hover {
+    width: 240px;
+    height: 139px;
+    opacity: 1.0;
+    transition: 400ms;
+}
