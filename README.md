@@ -6,6 +6,10 @@ Repository created to store codes and archives related to the Front-End part of 
 
 _Repositório criado para armazenar códigos e arquivos relacionados à parte Front-End do Curso Full Stack ministrado pelo SENAI._
 
+You can check the project (still under construction) through the link: [Game Mania](https://joelmaregina.github.io/game-mania/index.html)
+
+_Você pode conferir o projeto (ainda em construção) através do link:  [Game Mania](https://joelmaregina.github.io/game-mania/index.html)_
+
 - [User Interface (UI), User Experience (UX) and Prototyping (_UI-UX e Prototipagem_);](https://github.com/joelmaregina/Senai-FrontEnd/tree/master/UI-UX-And-Prototyping(SA1))
   - [x] [Low-fidelity desktop prototype (_Protótipo de baixa fidelidade para computadores_);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/UI-UX-And-Prototyping(SA1)/Prototypes/LowFidelityPrototype.png)
   - [x] [High-fidelity desktop prototype (_Protótipo de alta fidelidade para computadores_);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/UI-UX-And-Prototyping(SA1)/Prototypes/HighFidelityDesktop.png)
@@ -16,9 +20,16 @@ _Repositório criado para armazenar códigos e arquivos relacionados à parte Fr
 - [HTML, CSS e JavaScript](https://github.com/joelmaregina/Senai-FrontEnd/tree/master/HTML-CSS-Javascript)
   - Building the previous prototype design with: (_Construindo o projeto do protótipo anterior com:_)
     - [x] [HTML;](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/index.html)
+    
     - [x] [CSS with Flexbox;](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/css/style.css)
-    - [x] Responsive desing;
-    - [ ] JavaScript;
+    
+    - [x] Responsive desing with @media (index.html);
+    
+    - [ ] Responsive design with Bootstrap;
+    
+    - [ ] JavaScript & jQuery;
+    
+      
 
 
 
