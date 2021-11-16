@@ -8,19 +8,20 @@ body{
     padding-top: 25px;
     background-color: #2F323A;
     color: white;
-    font-family: "Saira Condensed", sans-serif;
 }
 
-.banner-consoles{
+.banner-construcao{
     height: 225px;
-    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/console.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)100%), url(../img/construcao.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: 'Saira', sans-serif;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.banner-consoles h1{
-    text-align: center;
+.gradiente{
+    height: 5rem;
+    background: linear-gradient(#2F323A, rgb(13, 46, 74, 1) 100%);
 }
-

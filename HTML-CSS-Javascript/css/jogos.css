@@ -17,9 +17,6 @@ body{
     background-position: center;
     background-size: cover;
     font-family: 'Saira', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .banner-jogos h1{

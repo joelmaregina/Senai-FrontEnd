@@ -12,6 +12,11 @@
         <!-- CSS da página Index/Home e Header e Footer das demais páginas -->
         <link rel="stylesheet" type="text/css" href="./css/style.css">
 
+        <!-- CSS da página Carrinho -->
+        <link rel="stylesheet" type="text/css" href="./css/carrinho.css">
+        <link rel="stylesheet" type="text/css" href="./css/produtos.css">
+
+
         <!-- Importando fontes do GoogleFonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,105 +57,15 @@
                     </nav>                    
                 </div>
             </div>
-        </header>
-        
-        <main class="banner">
-            <div class="container-grid itens-banner">
-                <div class="texto-banner-esquedo">
-                    <h1>Assine o <a href="#">Game Mania Club</a> e tenha acesso á descontos exclusivos! </h1>
-                </div>
-                <div class="texto-banner-direito">
-                    <h1> Compre á vista e ganhe 10% de desconto em todo o site.</h1>
-                </div>
-            </div>           
-        </main>
-        <section class="cards">
-            <div class="card-informativo">
-                <img src="img/cadeado-trancado.png" alt="Ícone de um cadeado"> <h2>Compra no site 100% segura</h2>
-            </div>
-            <div class="card-informativo">
-                <img src="img/pagamento-com-cartao-de-credito.png" alt="Ícone de cartões"><h2> Aceitamos todos os cartões </h2>
-            </div>
-            <div class="card-informativo">
-                <img src="img/caminhao-de-entrega.png" alt="Ícone de caminhão de entregas" id="caminhao"> <h2>Frete Grátis Norte-Nordeste</h2>
-            </div>
-        </section>
-        <section class="promocao container-grid-smaller">
-            <a href="#"><h3 class="titulo-secao"> <p>Produtos em promoção</p> </h3></a>
-                <div class="produtos-promocao">
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/console.jpeg" alt="Foto de console de video game vermelho e retrô">
-                            <h4 class="nome-produto"> Console Retrô Vermelho </h4>
-                            <h4 class="preco-produto">de: <strong class="price-red"> R$1250,00 </strong> <br> por apenas: <strong class="price-green">R$999,98 </strong></h4>
-                        </a>
-                    </div>
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/Headphone.jpg" alt="Foto de um Headphone preto">
-                            <h4 class="nome-produto"> Headphone Gaming Pro </h4>
-                            <h4 class="preco-produto">de: <strong class="price-red">R$250,00</strong> <br> por apenas: <strong class="price-green">R$200,00</strong></h4>
-                        </a>
-                    </div>
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/vr3.jpeg" alt="Foto de um óculos VR em uso por um homem">
-                            <h4 class="nome-produto"> Óculos VR Ultimate 7C </h4>
-                            <h4 class="preco-produto">de: <strong class="price-red">R$799,00 </strong> <br> por apenas: <strong class="price-green">R$699,00</strong></h4>                                
-                        </a>
-                    </div>
-                </div>               
-        </section>
-        <section class="mais-vendidos container-grid-smaller">
-            <a href="#"><h3 class="titulo-secao"> <p>Mais vendidos</p></h3></a>
-                <div class="produtos-mais-vendidos-top">
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/mario.jpeg" alt="Foto de uma boneco do Mario Bross">
-                            <h4 class="nome-produto">Miniatura Mario Bross</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 59,98</strong> em até <br> 10X sem juros</h4>
-                        </a>
-                    </div>
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/nintendo.jpeg" alt="Foto do console Nintendo Switch">
-                            <h4 class="nome-produto">Nintendo Switch</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 2199,97</strong> em até <br> 12X sem juros</h4>
-                        </a>
-                    </div>
-                    <div class="produto"> 
-                        <a href="#">
-                            <img src="img/tablet.jpeg" alt="Foto de um tablet">
-                            <h4 class="nome-produto">Tablet Infomais Tech </h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 1699,99</strong> em até <br> 12X sem juros</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="produtos-mais-vendidos-bottom">
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/teclado-gamer.jpg" alt="Foto de um teclado preto de computador">
-                            <h4 class="nome-produto">Teclado Gamer Ligth</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 75,99 </strong>em até <br> 10X sem juros</h4>                                
-                        </a>
-                    </div>
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/Mouse.jpeg" alt="Foto de um mouse preto de computador retroiluminado com luzes coloridas">
-                            <h4 class="nome-produto">Mouse Gamer Rainbow</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$79,99</strong> em até <br> 10X sem juros</h4>
-                        </a>
-                    </div>
-                    <div class="produto">
-                        <a href="#">
-                            <img src="img/PS4.jpeg" alt="Foto do console do Playstation 4">
-                            <h4 class="nome-produto">Console Playstation 4</h4>
-                            <h4 class="preco-produto"> <strong class="price-green">R$ 1799,98 </strong>em até <br> 12X sem juros</h4>                                
-                        </a>
-                    </div>
-                </div>             
-        </section>
+        </header>        
 
+        <main class="banner-carrinho d-flex flex-column justify-content-evenly">
+            <h1> <strong>Carrinho</strong></h1>
+        </main>
+
+
+        <div class="gradiente">
+        </div>
 
         <footer class= "footer">
             <div class="footer-azul ">

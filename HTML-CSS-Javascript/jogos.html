@@ -8,6 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">        
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/jogos.css">
+        <link rel="stylesheet" type="text/css" href="./css/produtos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
                     <div class="posicionamento-header-direito"> 
                         <input type="text" placeholder="Digite sua busca aqui" class="campo-busca">
                         <div class="carrinho">
-                            <a href="#"><img src="img/carrinho-carrinho.png" alt="Ícone de carrinho de compras"> <h3>| 0 </h3></a> 
+                            <a href="carrinho.html"><img src="img/carrinho-carrinho.png" alt="Ícone de carrinho de compras"> <h3>| 0 </h3></a> 
                         </div>
                         <div class= "login">
                             <a href="#"><img src="img/user.png" alt="ícone do usuário"><h3>Login | Cadastro</h3> </a>
@@ -39,107 +40,168 @@
                         <a href="jogos.html"> Jogos </a>
                         <a href="computadores.html"> Computadores </a>
                         <a href="controles.html"> Controles </a>
-                        <a href="#"> Acessórios </a>
-                        <a href="#"> Celulares </a>
-                        <a href="#"> Promoções </a>
-                    </nav>                    
+                        <a href="construcao.html"> Acessórios </a>
+                        <a href="construcao.html"> Celulares </a>
+                        <a href="construcao.html"> Promoções </a>
+                    </nav>                     
                 </div>
             </div>
         </header>
 
-        <main class="banner-jogos">
+        <main class="banner-jogos d-flex flex-column justify-content-evenly">
             <h1>Jogos</h1>
         </main>
 
-        <section class="filtros container-grid-smaller">
-            <nav>
-                <a href="" class="ordernar">Ordenar por:</a>
-                <a href="" class="filtro">Filtrar por:</a>
+        <section class="container filtro">
+            <nav class= "d-flex filtro-nav">
+                <label>Ordenar por: </label>
+                <select>
+                    <option>Relevância</option>
+                    <option>Mais vendidos</option>
+                    <option>Preço: Menor para maior</option>
+                    <option>Preço: Maior para o menor</option>
+                    <option>Melhor avaliação</option>
+                </select>
             </nav>
         </section>
 
-        <section class="produtos container-grid-smaller">
-            <h2>Computadores:</h2>
-        </section>
+        <section class="container d-flex ">
+            <div class="container loja_lateral_esquerda col-lg-2 col-md-2">
+                <strong class="titulo_categoria">Categorias:</strong> 
+                <div class="categorias d-flex flex-column"> <strong class="categoria">Estado: </strong>
+                    <a href="#" class="item_categoria"> Novos </a>
+                    <a href="#" class="item_categoria"> Seminovos </a>
+                </div>                
+                <div class="preco"> <strong class="categoria">Preço: </strong><br>
+                    Min : <input type="number" value="0"> <br> Máx: <input type="number" value="5000">
+                    <input type="submit" value="OK">
+                </div>
+                <div class="marcas d-flex flex-column"> <strong class="categoria"> Gênero </strong>
+                    <a href="#" class="item_categoria"> Luta </a>
+                    <a href="#" class="item_categoria"> Ação </a>
+                    <a href="#" class="item_categoria"> Corrida </a>
+                    <a href="#" class="item_categoria"> Musical </a>
+                    <a href="#" class="item_categoria"> Infantil </a>
+                    <a href="#" class="item_categoria"> Simulação </a>
 
-        <section class="container menu_lateral">
-            <div class="categorias titulo_categoria d-flex flex-column"> <a href="#"> Categorias: </a>
-                <a href="#" class="item_categoria"> Novos </a>
-                <a href="#" class="item_categoria"> Seminovos </a>
-                <a href="#" class="item_categoria"> Usados </a>
-            </div>                
-            <div class="preco titulo_categoria"><a href=""> Preço: </a></div>
-                De: <input type="number"> até: <input type="number">
-            <div class="marcas titulo_categoria d-flex flex-column"> <a href="#"> Marcas: </a>
-                <a href="#" class="item_categoria">Xbox</a>
-                <a href="#" class="item_categoria">Nintendo</a>
-                <a href="#" class="item_categoria">Playstation</a>
-                <a href="#" class="item_categoria">Demais marcas</a>
-
+                </div>
             </div>
-        </section>
 
-        <section class="container">
-            <div class="d-flex flex-wrap justify-content-evenly .align-content-center pagina-produtos">
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
-                </div>
-                <div class="produto-console">
-                    <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                    <p class="produto_pagina text-center"> Console </p>
-                    <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+            <div class="container loja_lateral_direita col-lg-10">
+                <div class="d-flex flex-wrap justify-content-evenly .align-content-center pagina-produtos">
+                    <div class="produto-loja">
+                        <a href="#">
+                            <img src="img/console.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Retrô Vermelho </p>
+                            <p class="preco_pagina preco-produto text-center"> <strong class="price-green"> R$ 999,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/console2.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Colors </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 599,00</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/nintendo.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Nintendo Switch </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 2199,97</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja">
+                        <a href="#">
+                            <img src="img/PS4.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Playstation 4 </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green">R$ 1799,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/xbox.jpg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Xbox W Series </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green">R$ 1799,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/psOld.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console PlayStation Classic </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 499,90</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/console-pp.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Retrô Tech+ </p>
+                            <p class="preco_pagina preco-produto text-center"> <strong class="price-green"> R$ 599,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/psvita.jpeg" alt="" class="imagem_compra"> 
+                            <p class="produto_pagina nome-produto text-center"> PS Vita </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 699,97</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja">
+                        <a href="#">
+                            <img src="img/console.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Retrô Vermelho </p>
+                            <p class="preco_pagina preco-produto text-center"> <strong class="price-green"> R$ 999,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/console2.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Colors </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 599,00</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/nintendo.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Nintendo Switch </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 2199,97</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja">
+                        <a href="#">
+                            <img src="img/PS4.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Playstation 4 </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green">R$ 1799,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/xbox.jpg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Xbox W Series </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green">R$ 1799,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/psOld.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console PlayStation Classic </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 499,90</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/console-pp.jpeg" alt="" class="imagem_compra">
+                            <p class="produto_pagina nome-produto text-center"> Console Retrô Tech+ </p>
+                            <p class="preco_pagina preco-produto text-center"> <strong class="price-green"> R$ 599,98</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>
+                    <div class="produto-loja"> 
+                        <a href="#">
+                            <img src="img/psvita.jpeg" alt="" class="imagem_compra"> 
+                            <p class="produto_pagina nome-produto text-center"> PS Vita </p>
+                            <p class="preco_pagina preco-produto text-center"><strong class="price-green"> R$ 699,97</strong> em até <br> 12x sem juros</p>
+                        </a>
+                    </div>                                     
+                    </div>
                 </div>
             </div>
         </section>

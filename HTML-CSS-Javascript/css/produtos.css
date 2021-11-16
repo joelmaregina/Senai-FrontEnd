@@ -1,0 +1,110 @@
+
+.filtro{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filtro-nav{
+    justify-content: end;
+}
+
+.filtro select{
+    background-color: #9C2A39;
+    color: white;
+    margin-left: 0.7rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.loja_lateral_esquerda{
+    background-color: #41454f;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.19), 0 6px 15px rgba(255,255,255,0.23);
+    line-height: 2.5rem;
+    margin-right: 1rem;    
+    transition: 400ms;
+    margin-bottom: 35px;
+}
+
+.loja_lateral_direita{
+    margin-bottom: 35px;
+}
+
+.titulo_categoria{
+    margin: 15px;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.5rem;
+}
+
+.categoria{
+    font-size: 1.3rem;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.loja_lateral_esquerda a{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.loja_lateral_esquerda a:hover {
+    color: #D72638;
+    font-weight: bold;
+    transition: 400ms;
+}
+
+input[type=number]{
+    background-color:  #396A94;
+    border: 2px solid #3F88C5;
+    border-radius: 5px;
+    color: white;
+    width: 4rem;
+    height: 2rem;
+}
+
+input[type=submit]{
+    background-color: #3F88C5;
+    color: white;
+    padding: 0 0.1rem 0 0.1rem;
+    border-radius: 5px;
+    height: 2.5rem;
+}
+
+.produto-loja{
+    margin: 0.05rem;
+    margin-bottom: 20px;
+}
+
+.produto-loja a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.imagem_compra{
+    width: 210px;
+    height: 120px;
+    opacity: 0.7;
+    transition: 400ms;
+}
+
+.imagem_compra:hover {
+    width: 225px;
+    height: 129px;
+    opacity: 1.0;
+    transition: 400ms;
+}
+
+.gradiente{
+    height: 5rem;
+    background: linear-gradient(#2F323A, rgb(13, 46, 74, 1) 100%);
+}
+
+@media screen and (max-width: 775px) {
+    .loja_lateral_esquerda {
+        display: none;
+    }
+
+    .filtro-nav{
+        justify-content: center;
+    }
+}
