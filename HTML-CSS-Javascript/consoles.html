@@ -48,26 +48,34 @@
         </header>
 
         <main class="banner-consoles">
-            <h1>Consoles</h1>
+            <h1> <strong>Consoles</strong> </h1>
         </main>
 
-        <section class="filtros container-grid-smaller">
-            <nav>
-                <a href="" class="ordernar">Ordenar por:</a>
-                <a href="" class="filtro">Filtrar por:</a>
+        <section class="container filtro">
+            <nav class= "d-flex justify-content-end">
+                <label>Ordenar por: </label>
+                <select>
+                    <option>Relevância</option>
+                    <option>Mais vendidos</option>
+                    <option>Preço: Menor para maior</option>
+                    <option>Preço: Maior para o menor</option>
+                    <option>Melhor avaliação</option>
+                </select>
             </nav>
         </section>
 
-        <section class="container">
-            <div class="container menu_lateral">
-                <div class="categorias titulo_categoria d-flex flex-column"> <a href="#"> Categorias: </a>
+        <section class="container d-flex ">
+            <div class="container loja_lateral_esquerda col-lg-2 col-md-2">
+                <div class="categorias d-flex flex-column"> <strong class="titulo_categoria">Categorias:</strong> 
                     <a href="#" class="item_categoria"> Novos </a>
                     <a href="#" class="item_categoria"> Seminovos </a>
                     <a href="#" class="item_categoria"> Usados </a>
                 </div>                
-                <div class="preco titulo_categoria"><a href=""> Preço: </a></div>
-                    De: <input type="number"> até: <input type="number">
-                <div class="marcas titulo_categoria d-flex flex-column"> <a href="#"> Marcas: </a>
+                <div class="preco"> <strong class="categoria">Preço: </strong><br>
+                    Min : <input type="number" value="0"> <br> Máx: <input type="number" value="5000">
+                    <input type="submit" value="OK">
+                </div>
+                <div class="marcas d-flex flex-column"> <strong class="categoria"> Marcas: </strong>
                     <a href="#" class="item_categoria">Xbox</a>
                     <a href="#" class="item_categoria">Nintendo</a>
                     <a href="#" class="item_categoria">Playstation</a>
@@ -76,67 +84,67 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container loja_lateral_direita col-lg-10">
                 <div class="d-flex flex-wrap justify-content-evenly .align-content-center pagina-produtos">
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                     <div class="produto-console">
                         <img src="img/console2.jpeg" alt="" class="imagem_compra">
-                        <p class="produto_pagina text-center"> Console </p>
-                        <p class="preco_pagina text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
+                        <p class="produto_pagina nome-produto text-center"> Console </p>
+                        <p class="preco_pagina preco-produto text-center"> R$ <strong class="price-green">599,00</strong> em até <br> 12x sem juros</p>
                     </div>
                 </div>
             </div>
