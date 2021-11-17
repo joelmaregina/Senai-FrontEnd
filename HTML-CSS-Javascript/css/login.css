@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 25px;
+    background-color: #2F323A;
+    color: white;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.banner-login{
+    height: 225px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/loginTopo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Saira', sans-serif;
+}
+
+.banner-login h1{
+    text-align: center;
+}
+
