@@ -726,6 +726,7 @@ main {
 
     .banner2{
         height: 210px;
+        background-position: left;
     }
 
     .banner3{
@@ -1340,6 +1341,7 @@ main {
     }
 
     .banner2{
+        background-image: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)100%), url(../img/blackFriday.jpg);
         height: 170px;
     }
 
