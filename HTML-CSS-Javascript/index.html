@@ -38,7 +38,8 @@
                             <a href="login.html"><img src="img/user.png" alt="ícone do usuário"><h3>Login | Cadastro</h3> </a>
                         </div>
                         <div class="menu-barras">
-                            <a href="#" onclick="mostraMenu()"><img src="img/menu.png" class="barras" alt="Menu de barras"></a>
+                            <a href="#" id="barras"><img src="img/menu.png" class="barras" alt="Menu de barras"></a>
+                            <!-- <a href="#" onclick="mostraMenu()"><img src="img/menu.png" class="barras" alt="Menu de barras"></a> -->
                         </div>
                     </div>
                     <nav id="menu" class= menu>
@@ -54,16 +55,33 @@
             </div>
         </header>
         
-        <main class="banner">
-            <div class="container-grid itens-banner">
-                <div class="texto-banner-esquedo">
-                    <h1>Assine o <a href="#">Game Mania Club</a> e tenha acesso á descontos exclusivos! </h1>
-                </div>
-                <div class="texto-banner-direito">
-                    <h1> Compre á vista e ganhe 10% de desconto em todo o site.</h1>
-                </div>
-            </div>           
-        </main>
+        <div id="carrossel" class="carrossel"> 
+            <div class="banner">
+                <div class="container-grid itens-banner">
+                    <div class="texto-banner-esquedo">
+                        <h1>Assine o <a href="#">Game Mania Club</a> e tenha acesso á descontos exclusivos! </h1>
+                    </div>
+                    <div class="texto-banner-direito">
+                        <h1> Compre á vista e ganhe 10% de desconto em todo o site.</h1>
+                    </div>
+                </div> 
+            </div>
+            <div class="banner2">
+                <div class="container-grid itens-banner-meio justify-content-end" >
+                    <div class="texto-banner-direito uppercase">
+                        <h1> <span class="uppercase">Black Friday</span>: Descontos imperdíveis para você aproveitar! </h1>
+                    </div>
+                </div> 
+            </div>
+            <div class="banner3">
+                <div class="container-grid itens-banner justify-content-center">
+                    <div class="texto-banner-esquedo">
+                        <h1> <a href="#">Computadores</a> com 10% de desconto e <span class="uppercase"> frete grátis!</span></h1>
+                    </div>
+                </div> 
+            </div>      
+        </div>
+
         <section class="cards">
             <div class="card-informativo">
                 <img src="img/cadeado-trancado.png" alt="Ícone de um cadeado"> <h2>Compra no site 100% segura</h2>
@@ -75,6 +93,7 @@
                 <img src="img/caminhao-de-entrega.png" alt="Ícone de caminhão de entregas" id="caminhao"> <h2>Frete Grátis Norte-Nordeste</h2>
             </div>
         </section>
+
         <section class="promocao container-grid-smaller">
             <a href="#"><h3 class="titulo-secao"> <p>Produtos em promoção</p> </h3></a>
                 <div class="produtos-promocao">
@@ -103,7 +122,7 @@
         </section>
         <section class="mais-vendidos container-grid-smaller">
             <a href="#"><h3 class="titulo-secao"> <p>Mais vendidos</p></h3></a>
-                <div class="produtos-mais-vendidos-top">
+                <div id="mais-vendidos-top" class="produtos-mais-vendidos-top">
                     <div class="produto">
                         <a href="#">
                             <img src="img/mario.jpeg" alt="Foto de uma boneco do Mario Bross">
@@ -214,6 +233,7 @@
             </div>
         </footer>
         <script src="js/script.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>          
     </body>
 </html>

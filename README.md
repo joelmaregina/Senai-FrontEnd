@@ -22,9 +22,9 @@ _Você pode conferir o projeto (ainda em construção) através do link:  [Game 
     - [x] [CSS with Flexbox;](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/css/style.css)
     - [x] [Responsive desing with @media (index.html  && style.css);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/css/style.css)
     - [x] [Responsive design with Bootstrap (consoles.html)](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/consoles.html);
-    - [ ] JavaScript & jQuery;
-      - [x] [Rendering products with JavaScript (computadores.html && computadores.js) (_Renderizando produtos com JavaScript_);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/js/computadores.js)
-      - [ ] jQuery
+    - [x] JavaScript & jQuery;
+      - [x] [Rendering products with JavaScript (computadores.html & computadores.js) (_Renderizando produtos com JavaScript_);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/js/computadores.js)
+      - [x] Carousel with jQuery (index.html & script.js) (_Carrossel com jQuery_)
 - Version with Angular (_Versão com Angular_)
 
 

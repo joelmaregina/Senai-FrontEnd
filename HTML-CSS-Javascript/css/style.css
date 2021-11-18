@@ -194,7 +194,48 @@ main {
     font-family: 'Saira', sans-serif;
 }
 
+.banner2{
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/blackFriday.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Saira', sans-serif;
+    display: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.banner3{
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)100%), url(../img/pexels-photo-2047905.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Saira', sans-serif;
+    display: none;
+}
+
+#carrossel img{
+    display: none;
+    width: 100%;
+    height: 18em;
+}
+
+.banner-ativo {
+    display: flex;
+}
+
 .itens-banner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens-banner-meio {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -682,6 +723,14 @@ main {
     .banner{
         height: 210px;
     }
+
+    .banner2{
+        height: 210px;
+    }
+
+    .banner3{
+        height: 210px;
+    }
     
     .texto-banner-esquedo h1{
         width: 12rem;
@@ -938,6 +987,14 @@ main {
         right: 0;
     }
 
+    .menu-escondido{
+        display: none;
+    }
+    
+    .menu-ativo{
+        display: flex;
+    }
+
     .posicionamento-header{
         position: relative;
     }
@@ -957,7 +1014,7 @@ main {
     .banner{
         background-image: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%), url(../img/banner.png);
         height: 210px;
-    }
+    }    
     
     .texto-banner-esquedo h1{
         width: 9rem;
@@ -1272,13 +1329,21 @@ main {
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    
     .itens-banner h1{
         margin-bottom: 0;
     }
     
     .banner{
         background-image: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%), url(../img/banner.png);
+        height: 170px;
+    }
+
+    .banner2{
+        height: 170px;
+    }
+
+    .banner3{
         height: 170px;
     }
     
