@@ -11,6 +11,10 @@ body{
     font-family: "Saira Condensed", sans-serif;
 }
 
+section a{
+    text-decoration: none;
+}
+
 .banner-login{
     height: 225px;
     background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/loginTopo.jpg);
@@ -24,3 +28,102 @@ body{
     text-align: center;
 }
 
+.login-subscribe{
+    margin: 35px auto;
+
+}
+
+.caixa.login{
+    width: 500px;
+    height: 500px;
+}
+
+.botao-sociais{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.botao-sociais div{
+    padding: 6px 5px 0px 5px;
+    margin: 0px 3px 7px 3px ;
+    border-radius: 10px;
+}
+
+.botao-sociais a{
+    color: white
+}
+
+.botao-sociais .twitter{
+    background-color: #23c9ea;
+}
+
+.botao-sociais .facebook{
+    background-color: #637bad;
+}
+
+.botao-sociais .google{
+    background-color: #d76a53;;
+}
+
+#formulario div{
+    margin-bottom: 1rem;
+}
+
+#formulario div input{
+    width: 40vw;
+    height: fit-content;
+    padding: 1%;
+    text-align: center;
+}
+
+#formulario div button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #9C2A39;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 1% 30%;
+    font-family: "Saira", sans-serif;
+}
+
+.formulario-inscricao{
+    display: none;
+}
+
+.login-subscribe input{
+    background-color: #396A94;
+    border: 2px solid #3F88C5;
+    border-radius: 10px;
+}
+
+.botao-inscricao-login{
+    background-color: #9C2A39;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    margin-left: 5px;
+}
+
+.muda-para-login{
+    display: none;
+}
+
+
+@media screen and (max-width: 805px) {
+    #formulario div input{
+        width: 55vw;
+    }
+
+    .banner-login{
+        background-position: right; 
+    }
+}
+
+@media screen and (max-width: 535px) {
+    #formulario div input{
+        width: 75vw;
+    }
+}

@@ -25,7 +25,8 @@ _Você pode conferir o projeto (ainda em construção) através do link:  [Game 
     - [x] JavaScript & jQuery;
       - [x] [Rendering products with JavaScript (computadores.html & computadores.js) (_Renderizando produtos com JavaScript_);](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/js/computadores.js)
       - [x] [Carousel with jQuery (index.html & script.js) (_Carrossel com jQuery_)](https://github.com/joelmaregina/Senai-FrontEnd/blob/master/HTML-CSS-Javascript/js/script.js)
-- Version with Angular (_Versão com Angular_)
+  
+  
 
 
 
