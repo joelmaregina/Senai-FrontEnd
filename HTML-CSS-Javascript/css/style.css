@@ -270,6 +270,14 @@ main {
     text-align: center;
 }
 
+#produto-nao-encontrado{
+    height: 300px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
 .cards {
     margin: 40px 0 50px 0;
     display: flex;
@@ -379,7 +387,6 @@ main {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 
 .produto{
@@ -612,6 +619,10 @@ main {
 
 #botao-fale-conosco {
     display: none;
+}
+
+.invisivel{
+	display: none;
 }
 
 /************************* Responsividade - Desktop menores *************************************************************************************/
@@ -1107,7 +1118,6 @@ main {
 
     .produtos-mais-vendidos-bottom{
         justify-content: space-evenly;
-        margin-bottom: 50px;
     }
 
     .mais-vendidos a h4{
@@ -1441,7 +1451,6 @@ main {
 
     .produtos-mais-vendidos-bottom{
         justify-content: space-evenly;
-        margin-bottom: 50px;
     }
 
     .mais-vendidos a h4{

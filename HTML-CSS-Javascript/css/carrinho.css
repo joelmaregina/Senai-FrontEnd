@@ -24,3 +24,40 @@ body{
     text-align: center;
 }
 
+.carrinho_html{
+    align-items: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: 3rem auto 2rem auto;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.19), 0 6px 15px rgba(255,255,255,0.23);
+    border-radius: 15px;
+}
+
+.carrinho_html h2 .fa-shopping-cart{
+    font-size: 2.0em;
+    color: #D72638;
+}
+
+.carrinho_html a{
+    color: #e13a4b;
+}
+
+.frase-meio-carrinho{
+    margin: 2rem auto 2rem auto;
+}
+
+@media screen and (max-width: 805px) {
+    .carrinho_html{
+        width: 65vw;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    .carrinho_html{
+        width: 80vw;
+    }
+}
+
+

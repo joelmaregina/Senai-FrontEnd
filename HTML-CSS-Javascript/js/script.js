@@ -27,12 +27,13 @@ $(document).ready(function(){
     })
 })
 
-let numeroProdutos = 0;
-let itensCarrinho = document.getElementById("itens-carrinho");
-function contarProdutos (){
-    numeroProdutos =+ 1;
-    itensCarrinho.innerText = numeroProdutos;
-}
+//Para implementar um carrinho
+// let numeroProdutos = 0;
+// let itensCarrinho = document.getElementById("itens-carrinho");
+// function contarProdutos (){
+//     numeroProdutos =+ 1;
+//     itensCarrinho.innerText = numeroProdutos;
+// }
 
 // Alternando MENU com JavaSctipt:
 // let menu = document.getElementById("menu");
@@ -44,21 +45,37 @@ function contarProdutos (){
 //     }
 // }
 
-
 let email = document.getElementById("email");
 function enviarEmail(){
     let emailDigitado = email.value;
     console.log(emailDigitado);
 }
 
-//Apresenta Pop-up caso o cliente não preencha os campos
-function validaFormulario () {
+//Apresenta Pop-up caso o cliente não preencha os campos de Login corretamente
+function validaFormularioLogin () {
   if (document.getElementById("email").value == "" && document.getElementById("password").value == "" ){
     alert("Por favor preencha os campos e e-mail e senha")
   }
 }
 
-//Muda o formulário para um formulário de inscrição
+//Apresenta Pop-up caso o cliente não preencha os campos de Inscrição corretamente
+function validaFormularioInscricao () {
+    if (document.getElementById("name").value == "" && document.getElementById("email").value == "" && document.getElementById("email").value == "" && document.getElementById("password").value == "" && document.getElementById("password-repeat").value == "" && document.getElementById("tel").value == "" ){
+      alert("Por favor preencha todos os campos solicitados para prosseguir com o seu cadastro")
+    }
+  }
+
+//JavaScript para avaliar se as senhas do forms de incrição coincidem
+function validaSenha() {
+    var password = document.querySelector("#password1");
+    var passwordRepeat =  document.querySelector("#password-repeat");
+    if(password.value != passwordRepeat.value){
+        alert("As senhas não coincidem. Preencha novamente os campos de senha.")
+        event.preventDefault()
+    }
+}
+
+//Muda o formulário para um formulário de inscrição com jQuery
 $("#inscricao").click(renderizaInscricao)
 
 function renderizaInscricao(){
@@ -77,11 +94,11 @@ function scrollPagina(){
     $("html, body").animate(
         {
             scrollTop: topoPagina  + "px"
-        }, 1000)
+        }, 800)
 }
 
 
-//Retorna para a página de Login
+//Retorna para a página de Login com jQuery
 $("#voltar-para-login").click(voltaParaLogin)
 
 function voltaParaLogin(){
@@ -94,3 +111,34 @@ function voltaParaLogin(){
     $(".chamadaFormulario").text("Faça login na sua conta com:");
     scrollPagina();
 }
+
+//Implementando busca na página com JavaScript:
+var busca = document.querySelector(".campo-busca");
+
+busca.addEventListener("input", function(){
+    console.log(this.value);
+    var produtos = document.querySelectorAll(".produto");
+    var banner = document.querySelector(".banner-paginas");
+
+    if (this.value.length > 0) {
+        for (var i = 0; i < produtos.length; i++) {
+            var produto = produtos[i];
+            var divProduto = produto.querySelector(".nome-produto");
+            var conteudo = divProduto.textContent;
+            var expressao = new RegExp(this.value, "i");
+            if (!expressao.test(conteudo)){
+                produto.classList.add("invisivel");
+            } else {
+                produto.classList.remove("invisivel");
+                banner.classList.add("invisivel");                
+            }
+        }
+    } else {
+        for (var i = 0; i < produtos.length; i++) {
+            var produto = produtos[i];
+            produto.classList.remove("invisivel");
+        }
+        banner.classList.remove("invisivel");
+    }
+ 
+})

@@ -66,7 +66,7 @@ function renderizarProdutos(){
     for (let i = 0; i < listaProdutos.length; i++) {
         const produto = listaProdutos[i];
 
-        template += `<div class="produto-loja">
+        template += `<div class="produto-loja produto">
             <a href="#">
                 <img src="${produto.imagem}" alt="${produto.alt}" class="imagem_compra">
                 <p class="produto_pagina nome-produto text-center"> ${produto.nomeProduto}</p>
