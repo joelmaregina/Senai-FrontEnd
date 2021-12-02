@@ -4,7 +4,7 @@ let listaProdutos = [
         imagem: "img/Pc-All-In-One-Black.jpeg",
         alt: "Foto de um computador All In One Preto",
         nomeProduto: "Computador All In One Dell",
-        preco: "R$2599,99",
+        preco: "R$ 2599,99",
         parcelas: "12"
     },
     {
@@ -18,42 +18,42 @@ let listaProdutos = [
         imagem: "img/notebookwhite.jpg",
         alt: "Foto de um notebook branco",
         nomeProduto: "Notebook HP Branco",
-        preco: "2199,95",
+        preco: "R$ 2199,95",
         parcelas: "12"
     },
     {
         imagem: "img/tabletWhite.jpeg",
         alt: "Foto de um tablet branco",
         nomeProduto: "Tablet Sony Branco",
-        preco: "R$1899,99",
+        preco: "R$ 1899,99",
         parcelas: "12"
     },
     {
         imagem: "img/notebookgrey.jpg",
         alt: "Foto de um notebook cinza",
         nomeProduto: "Notebook LG Cinza",
-        preco: "1799,98",
+        preco: "R$ 1799,98",
         parcelas: "12"
     },
     {
         imagem: "img/tablet2.jpeg",
         alt: "Foto de um tablet preto",
         nomeProduto: "Tablet AOC preto",
-        preco: "1399,95",
+        preco: "R$ 1399,95",
         parcelas: "12"
     },
     {
         imagem: "img/comptApple.jpg",
         alt: "Foto de um Computador All In One da Apple",
         nomeProduto: "Computador All In One Apple",
-        preco: "8799,98",
+        preco: "R$ 8799,98",
         parcelas: "12"
     },
     {
         imagem: "img/notebookdark.jpeg",
         alt: "Foto de um notebook preto",
         nomeProduto: "Notebook Positivo Preto",
-        preco: "2799,95",
+        preco: "R$ 2799,95",
         parcelas: "12"
     }
 ]
