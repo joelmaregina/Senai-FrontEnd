@@ -22,7 +22,7 @@ let listaProdutos = [
         parcelas: "12"
     },
     {
-        imagem: "img/ControlLights.jpeg",
+        imagem: "img/controlLights.jpeg",
         alt: "Foto de Controle Luminoso",
         nomeProduto: "Controle Lights X7",
         preco: "R$ 779,99",
@@ -31,7 +31,7 @@ let listaProdutos = [
     {
         imagem: "img/controlWhiteGenX.jpeg",
         alt: "Foto do controle Universal Gen X",
-        nomeProduto: "controle Universal Gen X",
+        nomeProduto: "Controle Universal Gen X",
         preco: "R$ 819,98",
         parcelas: "12"
     },

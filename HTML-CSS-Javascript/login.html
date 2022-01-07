@@ -91,7 +91,7 @@
                             <input id="password" type="password"  placeholder="Digite sua senha" required>                
                         </div>
                         <div class="d-flex justify-content-center botao-login-cadastro">
-                            <button onclick="validaFormularioLogin()"> Enviar </button>
+                            <button type="submit" onclick="validaFormularioLogin()"> Enviar </button>
                         </div>
                     </form>
                     <form class="formulario-inscricao" action="">
@@ -116,7 +116,7 @@
                             <input id="tel" type="tel"  placeholder="(xx) xxxx-xxxx" required>                
                         </div>
                         <div class="d-flex justify-content-center botao-login-cadastro">
-                            <button onclick="validaFormularioInscricao(), validaSenha()"> Enviar </button>
+                            <button type="submit" onclick="validaFormularioInscricao(), validaSenha()"> Enviar </button>
                         </div>
                     </form>
                 </div>
@@ -147,7 +147,7 @@
                         <form class="newsletter" action="">
                             <label for ="email" class="titulo-bloco-footer"> <p> Assine nossa newsletter:</p> </label>
                             <input id="email" type="email" placeholder="seuemail.@email.com" class="campo-email" required>
-                            <button onclick="enviarEmail()"> Enviar </button>
+                            <button onclick="enviarEmail()" type="submit"> Enviar </button>
                         </form>
                     </div>
                     <div class="blocofooter">
