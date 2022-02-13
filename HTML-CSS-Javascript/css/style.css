@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --font-saira:'Saira', sans-serif;
+}
+
 body{
     padding-top: 25px;
     background-color: #2F323A;
@@ -74,7 +78,7 @@ input::placeholder{
 
 .carrinho:hover{
     background-color: #D72638;
-    padding: 3px 30px;
+    transform: scaleX(1.1);
     transition: 400ms;
 }
 
@@ -116,7 +120,7 @@ input::placeholder{
 
 .login:hover{
     background-color: #D72638;
-    padding: 3px 30px;
+    transform: scaleX(1.1);
     transition: 400ms;
 }
 
@@ -162,10 +166,9 @@ input::placeholder{
 
 .menu a:hover {
     color: #3F88C5;
-    font-size: 24px;
     transition: 400ms;
     font-weight: 300;
-    font-family: 'Saira', sans-serif;
+    transform: scale(1.2);
 }
 
 .barras {
@@ -370,7 +373,7 @@ main {
 }
 
 .promocao a h4:hover{
-    font-size: 20px;
+    transform: scale(1.1);
     transition: 400ms;
 }
 
@@ -426,8 +429,7 @@ main {
 }
 
 .produtos-promocao .produto img:hover {
-    width: 240px;
-    height: 139px;
+    transform: scale(1.1);
     opacity: 1.0;
     transition: 400ms;
 }
@@ -438,7 +440,7 @@ main {
 }
 
 .mais-vendidos a h4:hover{
-    font-size: 20px;
+    transform: scale(1.1);
     transition: 400ms;
 }
 
@@ -450,8 +452,7 @@ main {
 }
 
 .produtos-mais-vendidos-top .produto img:hover {
-    width: 240px;
-    height: 139px;
+    transform: scale(1.1);
     opacity: 1.0;
     transition: 400ms;
 }
@@ -464,8 +465,7 @@ main {
 }
 
 .produtos-mais-vendidos-bottom .produto img:hover {
-    width: 240px;
-    height: 139px;
+    transform: scale(1.1);
     opacity: 1.0;
     transition: 400ms;
 }
@@ -492,7 +492,7 @@ main {
     color: #D72638;
     transition: 400ms;
     font-weight: bold;
-    font-size: 19px;
+    transform: scale(1.1);
 }
 
 .footer-azul {
@@ -607,8 +607,7 @@ main {
 .footer-inferior img:hover{
     opacity: 1.00;
     transition: 750ms;
-    width: 50px;
-    height:50px;
+    transform: scale(1.2);
 }
 
 .footer-inferior-sociais{
@@ -667,7 +666,6 @@ main {
 
     .carrinho:hover{
         background-color: #D72638;
-        padding: 1px 12px;
         transition: 400ms;
     }
        
@@ -696,7 +694,6 @@ main {
     
     .login:hover{
         background-color: #D72638;
-        padding: 0px 8px;
         transition: 400ms;
     }
     
@@ -723,10 +720,6 @@ main {
         font-size: 1.2rem;
     }
     
-    .menu a:hover {
-        font-size: 1.2rem;
-    }
-
     .itens-banner{
         width: 72%;
     }
@@ -793,38 +786,21 @@ main {
   
     .promocao a h4{
         font-size: 0.9rem;
-    }
-    
-    .promocao a h4:hover{
-        font-size: 1.0rem;
-    }       
-       
+    }    
+
     .produtos-promocao .produto img {
         width: 180px;
         height: 95px;
     }
     
-    .produtos-promocao .produto img:hover {
-        width: 190px;
-        height: 105px;
-    }
     
     .mais-vendidos a h4{
         font-size: 0.9rem;
     }
     
-    .mais-vendidos a h4:hover{
-        font-size: 1.0rem;
-
-    }    
     .produtos-mais-vendidos-top .produto img {
         width: 180px;
         height: 95px;
-    }
-    
-    .produtos-mais-vendidos-top .produto img:hover {
-        width: 190px;
-        height: 105px;
     }
     
     .produtos-mais-vendidos-bottom .produto img {
@@ -832,11 +808,6 @@ main {
         height: 95px;
     }
     
-    .produtos-mais-vendidos-bottom .produto img:hover {
-        width: 190px;
-        height: 105px;
-    } 
-
     .footer a{
         font-size: 1.0rem;
         margin-bottom: 1.7rem;
@@ -844,12 +815,8 @@ main {
 
     .footer p {
         margin-bottom: 2.0rem;
-    }
-    
-    .footer a:hover {
-        font-size: 1.3rem;
-    } 
-    
+    }    
+  
     .footer-superior{
         justify-content: space-evenly;
     }
@@ -930,12 +897,7 @@ main {
         border-radius: 5px;
         margin-right: 10px;
      }
-
-    .carrinho:hover{
-        background-color: #D72638;
-        padding: 0 5px;
-    }
-       
+ 
     .carrinho:active{
         background-color: #3F88C5;
         padding: 0 5px;
@@ -955,11 +917,6 @@ main {
         padding: 0px 4px;
         border-radius: 5px;
         margin-right: 10px;
-    }
-    
-    .login:hover{
-        background-color: #D72638;
-        padding: 0px 5px;
     }
     
     .login:active{
@@ -1015,10 +972,6 @@ main {
         font-size: 0.9rem;
     }
     
-    .menu a:hover {
-        font-size: 0.9rem;
-    }
-  
     .itens-banner{
         width: 80%;
     }
@@ -1091,22 +1044,13 @@ main {
   
     .promocao a h4{
         font-size: 0.8rem;
-    }
-    
-    .promocao a h4:hover{
-        font-size: 0.9rem;
-    }       
+    }      
        
     .produtos-promocao .produto img {
         width: 170px;
         height: 85px;
     }
-    
-    .produtos-promocao .produto img:hover {
-        width: 180px;
-        height: 95px;
-    }
-          
+            
     .produtos-promocao {
         margin-bottom: 0px;
     }
@@ -1122,31 +1066,17 @@ main {
 
     .mais-vendidos a h4{
         font-size: 0.8rem;
-    }
-    
-    .mais-vendidos a h4:hover{
-        font-size: 0.9rem;
-    }   
+    }  
 
     .produtos-mais-vendidos-top .produto img {
         width: 170px;
         height: 85px;
     }
-    
-    .produtos-mais-vendidos-top .produto img:hover {
-        width: 180px;
-        height: 95px;
-    }
-    
+
     .produtos-mais-vendidos-bottom .produto img {
         width: 170px;
         height: 85px;
     }
-    
-    .produtos-mais-vendidos-bottom .produto img:hover {
-        width: 180px;
-        height: 95px;
-    } 
 
     .footer a{
         font-size: 0.9rem;
@@ -1156,10 +1086,6 @@ main {
     .footer p {
         margin-bottom: 2.0rem;
         font-size: 1.1rem;
-    }
-    
-    .footer a:hover {
-        font-size: 1.0rem;
     }
 
     .blocofooter{
@@ -1258,11 +1184,6 @@ main {
         margin-bottom: 22px;
      }
 
-    .carrinho:hover{
-        background-color: #D72638;
-        padding: 0 4px;
-    }
-       
     .carrinho:active{
         background-color: #3F88C5;
         padding: 0 4px;
@@ -1283,13 +1204,8 @@ main {
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 22px;
-    }
-    
-    .login:hover{
-        background-color: #D72638;
-        padding: 0px 5px;
-    }
-    
+    }    
+   
     .login:active{
         background-color: #3F88C5;
         padding: 0px 4px;
@@ -1328,10 +1244,6 @@ main {
     }
 
     .menu a {
-        font-size: 0.9rem;
-    }
-    
-    .menu a:hover {
         font-size: 0.9rem;
     }
   
@@ -1425,19 +1337,10 @@ main {
     .promocao a h4{
         font-size: 0.8rem;
     }
-    
-    .promocao a h4:hover{
-        font-size: 0.9rem;
-    }       
-       
+
     .produtos-promocao .produto img {
         width: 170px;
         height: 85px;
-    }
-    
-    .produtos-promocao .produto img:hover {
-        width: 180px;
-        height: 95px;
     }
           
     .produtos-promocao {
@@ -1456,30 +1359,16 @@ main {
     .mais-vendidos a h4{
         font-size: 0.8rem;
     }
-    
-    .mais-vendidos a h4:hover{
-        font-size: 0.9rem;
-    }   
 
     .produtos-mais-vendidos-top .produto img {
         width: 170px;
         height: 85px;
     }
     
-    .produtos-mais-vendidos-top .produto img:hover {
-        width: 180px;
-        height: 95px;
-    }
-    
     .produtos-mais-vendidos-bottom .produto img {
         width: 170px;
         height: 85px;
     }
-    
-    .produtos-mais-vendidos-bottom .produto img:hover {
-        width: 180px;
-        height: 95px;
-    } 
 
     .footer a{
         font-size: 0.9rem;
@@ -1489,10 +1378,6 @@ main {
     .footer p {
         margin-bottom: 0.6rem;
         font-size: 1.1rem;
-    }
-    
-    .footer a:hover {
-        font-size: 1.0rem;
     }
 
     .blocofooter{
@@ -1546,7 +1431,7 @@ main {
     #botao-fale-conosco p:hover{
         background-color: #3F88C5;
         text-transform: uppercase;
-        padding: 3px 55px;
+        transform: scaleX(1.1);
         border-radius: 10px;
         transition: 400ms;
     }

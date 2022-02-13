@@ -31,8 +31,7 @@ body{
 }
 
 .imagem_compra:hover {
-    width: 240px;
-    height: 139px;
+    transform: scale(1.1);
     opacity: 1.0;
     transition: 400ms;
 }
